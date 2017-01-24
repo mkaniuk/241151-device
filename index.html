@@ -10,7 +10,7 @@
   	<a href="index.html"><p class="logo">device</p></a>
   	<div class="search">
   		<form action="#" name="search" method="get">
-  			<label for="search" clas="search-lable">Найти</label>
+  			<label for="search">Найти</label>
   			<input type="text" name="search" value="Поиск по сайту" id=search>
   		</form>
   	</div>
@@ -42,14 +42,16 @@
 </div>
 
 <main class="container"> 
-	<div class="device-description"> <!-- уверен что разметка будет неверной, но, (надеюсь из за отсутствия знаний) не представляю как сделать иначе-->
-		<section class="slider">
-		<img class="slider-image" src="#" alt="дуло на 8 метров">
-		<h2> Делай селфи, как Бен Стиллер!</h2>
-		<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл) метров длиной и всего 5 килограмм</p>
-		<h3><a href="#">Подробнее</a></h3>
+<!-- Блок со слайдерами товаров -->
 
-		<table class="device-specification">
+	<div class="slider">
+		<div class="stick-slider"> <!-- уверен что разметка будет неверной, но, (надеюсь из за отсутствия знаний) не представляю как сделать иначе-->
+			<img class="slider-image" src="#" alt="селфи палка/гиря">
+				<h2> Делай селфи, как Бен Стиллер!</h2>
+				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл) метров длиной и всего 5 килограмм</p>
+				<a href="#">Подробнее</a>
+
+			<table class="device-specification">
 			<tr>
 				<td>8,5 м</td>
 				<td>5 кг</td>
@@ -60,8 +62,45 @@
 				<td>Вес палки</td>
 				<td>Материал</td>
 			</tr>
-		</table>
-	</section>
+			</table>
+		</div>
+
+		<div class="watch-slider">
+			<img class="slider-image" src="#" alt="Модный фитнесс трекер">
+				<h2>Худеем правильно!</h2>
+				<p>Мотивирующие фитнесс браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
+				<a href="#">Подробнее</a>
+			<table class="device-specification">
+			<tr>
+				<td>48 часов</td>
+			</tr>
+			<tr>
+				<td>Без подзарядки</td>
+			</tr>
+			</table>
+		</div>
+
+		<div class="quadro-slider">
+			<img class="slider-image" src="#" alt="Квадрокопер с лазерной укаской для кота">
+				<h2>Пархает как бабочка, жалит как пчела</h2>
+				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощьным лазером, замаскированным под стандартную камеру</p>
+				<a href="#">Подробнее</a>
+			<table class="device-specification">
+			<tr>
+				<td>800 м</td>
+				<td>50 м</td>
+			</tr>
+			<tr>
+				<td>Дальность полета</td>
+				<td>Радиус поражения</td>
+			</tr>
+			</table>
+		</div>
+		<form action="#" method="post">
+			<input type="radio" name="stick-btn" value="stick-slider" id="stick-btn">
+			<input type="radio" name="watch-btn" value="watch-slider-slider" id="watch-btn">
+			<input type="radio" name="quadro-btn" value="quadro-slider" id="quadro-btn">
+		</form>
 	</div>
 
 	<div class="device-list">  <!-- Не знал как лучше оформить, через таблицу или списком. Второй вариант показался легче в оформлении через CSS -->
@@ -161,7 +200,7 @@
 			<h3><a href="#">Напишите нам</a></h3>
 		</section>
 	</div>
-
+</main>
 	<footer class="main-footer">
 		<div class="container">
 			<div class="footer-info">
@@ -188,6 +227,5 @@
   			</div>
   		</div>
 	</footer>
-</main>
   </body>
 </html>
