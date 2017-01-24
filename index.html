@@ -2,23 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Девайс</title>
   </head>
   <body>
 <div class="container">
 <header class="main-header">
-  	<a href="#"><img class="header-label" src="#" alt="главная страница"></a>
-  	<div class="header-user-block">
-  		<form action="#" name="search" method="get" id=search>
-  			<input type="text" name="search" value="Поиск по сайту">
+  	<a href="index.html"><p class="logo">device</p></a>
+  	<div class="search">
+  		<form action="#" name="search" method="get">
+  			<label for="search" clas="search-lable">Найти</label>
+  			<input type="text" name="search" value="Поиск по сайту" id=search>
   		</form>
-  		<a class="costumer-links enter" href="#">Войти</a>
-  		<a class="costumer-links compare" href="#">Сравнить</a>
-  		<a class="costumer-links basket" href="#">Корзина</a>
+  	</div>
+  	<div class="user-block">
+  		<a class="user-link enter" href="#">Войти</a>
+  		<a class="user-link compare" href="#">Сравнить</a>
+  		<a class="user-link basket" href="#">Корзина</a>
   	</div>
   	<nav class="main-navigation">
   		<ul class="header-nav">
-  			<li><a href="#">Каталог товаров<span class="plus">+</span></a></li> <!-- не понял значения плюса, поэтому дал иму спан-->
+  			<li><a href="#">Каталог товаров<span class="plus">+</span></a>
+  			</li> 
   			<li><a href="#">Доставка</a></li>
   			<li><a href="#">Гарантия</a></li>
   			<li><a href="#">Контакты</a></li>
@@ -151,8 +155,8 @@
 	<footer class="main-footer">
 		<div class="container">
 			<div class="footer-info">
-				<a href="#">
-					<img src="#"  alt="главная страница">
+				<a href="index.html">
+					<p class="logo">device</p>
 				</a>
 				<p>гю Москва, ул. Строителей, 15</p>
 			</div>
