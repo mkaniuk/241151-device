@@ -2,63 +2,91 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Девайс</title>
   </head>
   <body>
 <div class="container">
 <header class="main-header">
-  	<a href="#"><img class="header-label" src="#" alt="главная страница"></a>
-  	<div class="header-user-block">
-  		<form action="#" name="search" method="get" id=search>
-  			<input type="text" name="search" value="Поиск по сайту">
-  		</form>
-  		<a class="costumer-links enter" href="#">Войти</a>
-  		<a class="costumer-links compare" href="#">Сравнить</a>
-  		<a class="costumer-links basket" href="#">Корзина</a>
-  	</div>
-  	<nav class="main-navigation">
-  		<ul class="header-nav">
-  			<li><a href="#">Каталог товаров<span class="plus">+</span></a></li> <!-- не понял значения плюса, поэтому дал иму спан-->
-  			<li><a href="#">Доставка</a></li>
-  			<li><a href="#">Гарантия</a></li>
-  			<li><a href="#">Контакты</a></li>
-  		</ul>
-  	</nav>
+<div class="header-logo">
+    <a href="index.html"><p class="logo">device</p></a>
+</div>
+    <div class="search">
+      <form action="#" name="search" method="get">
+        <label for="search">Найти</label>
+        <input type="text" name="search" value="Поиск по сайту" id=search>
+      </form>
+    </div>
+    <div class="user-block">
+      <a class="user-link enter" href="#">Войти</a>
+      <a class="user-link compare" href="#">Сравнить</a>
+      <a class="user-link basket" href="#">Корзина</a>
+    </div>
+    <nav class="main-navigation">
+      <ul class="header-nav">
+        <li><a class="main container" href="#">Каталог товаров</a>
+        <div class="catalog-menu">
+          <ul class="menu-list">            <!--Не хочу делать много вложеных дивов и разбивать список на отдельные, поэтому надеюсь что CSS сделает чудо-->
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнесс-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>  
+          </div>
+        </li> 
+        <li><a class="main container" href="#">Доставка</a></li>
+        <li><a class="main container" href="#">Гарантия</a></li>
+        <li><a class="main container" href="#">Контакты</a></li>
+      </ul>
+    </nav>
 </header>
 </div>
-<main>
-  <section class="page-head">
+
+<main class="container"> 
+<!-- Заголовок страницы -->
+  <section class="сontent-head">
     <h1>Моноподы для селфи</h1>
-    <p><a href="#"Главная></a> > <a href="#">Каталог товаров</a> > <a href="#">Моноподы для селфи</a></p>
+    <p><a href="index.html">Главная></a> > <a href="catalog.html">Каталог товаров</a> > <a href="#">Моноподы для селфи</a></p>
   </section>
+<!--  -->
 
-
+</main>
+<!-- Футер -->
   <footer class="main-footer">
-    <div class="container">
-      <div class="footer-info">
-        <a href="#">
-          <img src="#" alt="главная страница">
-        </a>
-        <p>гю Москва, ул. Строителей, 15</p>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <a href="#" class="logo">device</a>
       </div>
-      <div class="footer-menu">
-        <ul class="footer-nav">
-          <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </div>
-      <div class="footer-user-block">
-        <a class="costumer-links enter" href="#">Войти</a>
-          <a class="costumer-links compare" href="#">Сравнить</a>
-          <a class="costumer-links basket" href="#">Корзина</a>
-          <p>Тел.: +7(495)495-95-95</p>
+      <div class="user-block">
+          <a class="user-link enter" href="#">Войти</a>
+          <a class="user-link compare" href="#">Сравнить</a>
+          <a class="user-link basket" href="#">Корзина</a>
       </div>
     </div>
+
+    <div class="footer-middle">
+      <div class="addres">
+        <p>г. Москва, ул. Строителей, 15</p>  <!-- хочу так же здесь овормить, чтоб при клике сразу перебрасывало в карты, но это зделаю познее, когда узнаю как это далать-->
+      </div>
+      <div class="user-menu">
+      <ul class="footer-nav">
+        <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+          </ul>
+      </div>
+      <div class="phone">
+        <a href="tel:+74954959595">+7(495)495-95-95</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <div class="html-academy"></div>
+    </div>
   </footer>
-</main>
   </body>
 </html>
