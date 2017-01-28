@@ -4,185 +4,195 @@
     <meta charset="utf-8">
     <title>Девайс</title>
   </head>
-  <body>
+<body>
 <div class="container">
-<header class="main-header">
-<div class="header-logo">
-    <a href="index.html"><p class="logo">device</p></a>
-</div>
+  <header class="main-header">
+    <div class="header-logo">
+      <a><p class="logo">device</p></a>
+    </div>
     <div class="search">
-        <form action="#" name="search" method="get">
-            <label for="search">Найти</label>
-            <input type="text" name="search" value="Поиск по сайту" id=search>
-        </form>
+      <form action="#" name="search" method="get">
+        <input type="text" name="search" value="Поиск по сайту" id="search">
+        <input type="submit" name="search-btn" value="Найти" id="search-btn">
+      </form>
     </div>
     <div class="user-block">
-        <a class="user-link enter" href="#">Войти</a>
-        <a class="user-link compare" href="#">Сравнить</a>
-        <a class="user-link basket" href="#">Корзина</a>
+      <a class="user-link enter" href="#">Войти</a>
+      <a class="user-link compare" href="#">Сравнить</a>
+      <a class="user-link basket" href="#">Корзина</a>
     </div>
     <nav class="main-navigation">
-        <ul class="header-nav">
-            <li><a class="main container" href="catalog.html">Каталог товаров</a>
-                <div class="catalog-menu">
-                    <ul class="menu-list">            <!--Не хочу делать много вложеных дивов и разбивать список на отдельные, поэтому надеюсь что CSS сделает чудо-->
-                        <li><a href="#">Виртуальная реальность</a></li>
-                        <li><a href="#">Моноподы для селфи</a></li>
-                        <li><a href="#">Экшн-камеры</a></li>
-                        <li><a href="#">Фитнесс-браслеты</a></li>
-                        <li><a href="#">Умные часы</a></li>
-                        <li><a href="#">Квадрокоптеры</a></li>
-                    </ul>  
-                </div>
-            </li> 
-            <li><a class="main container" href="#">Доставка</a></li>
-            <li><a class="main container" href="#">Гарантия</a></li>
-            <li><a class="main container" href="#">Контакты</a></li>
-        </ul>
+      <ul class="header-nav">
+        <li><a class="main container" href="catalog.html">Каталог товаров</a>
+          <ul class="catalog-navigation-left">           
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a>
+              <ul class="catalog-navigation-center">
+                <li><a href="#">Фитнесс-браслеты</a></li>
+                <li><a href="#">Умные часы</a>
+                  <ul class="catalog-navigation-right">
+                    <li><a href="#">Квадрокоптеры</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>  
+        </li> 
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
     </nav>
 </header>
 </div>
 
-<main class="container"> 
+<main class=" main container"> 
 <!-- Заголовок страницы -->
   <section class="сontent-head">
     <h1>Моноподы для селфи</h1>
-    <p class="page-tree"><a href="index.html">Главная></a> > <a href="catalog.html">Каталог товаров</a> > <a href="#">Моноподы для селфи</a></p>
+    <ul id="breadcrumbs-one">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="#"></a>Каталог товаров</li>
+      <li><a href="#"></a>Моноподы для селфи</li>
+    </ul>
   </section>
 <!-- Форма для фильтра -->
-<div class="search-filter">
-    <h2>фильтр:</h2>
+  <div class="search-filter">
+    <span class="section-name filter">фильтр:</span>
     <form action="#" method="post">
-    <h2>Стоимость</h2>
-        <select multiple name="price"> 
-            <option value="0">0</option>
-            <option value="5000" selected>5000</option>
-        </select>
+      <span class="section-name">Стоимость</span>
+       <input type="range" min="0" max="10000" step="100" value="5000" /> - <!-- видел разную разметку, не уверен пока какую буду применять, так как и не совсем понимаю механизм ползунка. Дождусь темы об этом, тогда оформлю как надо. Пока что только сделаю видимость что здесь ползунок-->
         
-    <h2>Цвет</h2>
-        <input type="checkbox" name="black" id="black">
-        <label for="black">Черный</label><br>
+    <span class="section-name">Цвет</span>>
+      <input type="checkbox" name="black" value="black" id="black">
+      <label for="black">Черный</label><br>
 
-        <input type="checkbox" name="white" id="white">
-        <label for="white">Белый</label><br>
+      <input type="checkbox" name="white" value="white" id="white">
+      <label for="white">Белый</label><br>
 
-        <input type="checkbox" name="blue" id="blue">
-        <label for="blue">Синий</label><br>
+      <input type="checkbox" name="blue" value="blue" id="blue">
+      <label for="blue">Синий</label><br>
 
-        <input type="checkbox" name="red" id="red">
-        <label for="red">Красный</label><br>
+      <input type="checkbox" name="red" value="red" id="red">
+      <label for="red">Красный</label><br>
 
-        <input type="checkbox" name="pink" id="pink">
-        <label for="pink">Розовый</label>
-    <h2>Bluetooth</h2>
-        <input type="radio" name="bt-btn" value="Yes" id="bt-yes" checked>
-        <label for="bt-yes">Есть</label><br>
-        <input type="radio" name="bt-btn" value="No" id="bt-no">
-        <label for="bt-no">Нет</label>
-    <input type="submit" name="show" value="Показать">
+      <input type="checkbox" name="pink" value="pink" id="pink">
+      <label for="pink">Розовый</label>
+
+    <span class="section-name">Bluetooth</span>/>
+      <input type="radio" name="btth-btn" value="Yes" id="btth-yes" checked>
+      <label for="btth-yes">Есть</label><br>
+      <input type="radio" name="btth-btn" value="No" id="btth-no">
+      <label for="btth-no">Нет</label>
+      <input type="submit" name="show" value="Показать">
     </form>
-</div>
+  </div>
 <!-- Форма для отображения результатов фильтра и сортировки -->
 
-<div class="result">
+  <div class="result-container">
     <div class="result-head">
-        <h2>сотрировка:</h2>
-        <a href="">По цене</a>
-        <a href="">По типу</a>
-        <a href="">По популярности</a>
+      <h2>сотрировка:</h2>
+      <a href="">По цене</a>
+      <a href="">По типу</a>
+      <a href="">По популярности</a>
     </div>
     <div class="result-contant">
-        <div class="amature-stick">
-            <div class="item-image">
-                <img src="#" width="1" height="1" alt="Любительская селфи-палка">
-                <a href="#" class="add-to-bucked">в корзину</a>
-            </div>
-            <div class="item-caption">
-                <a href="#">Любительская селфи-палка</a>
-                <p>500&nbsp;руб</p>
-            </div>
+      <div class="item-block">
+        <div class="item-image">
+          <img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
+          <a href="#" class="add-to-bucked">в корзину</a>
         </div>
+        <div class="item-caption">
+          <a href="#">Любительская селфи-палка</a>
+          <p>500 руб</p>
+        </div>
+      </div>
     </div>
-    <div class="result-content">
-        <div class="prof-stick">
-            <div class="item-image">
-                <img src="#" width="1" height="1" alt="Профессиональная селфи-палка">
-                <a href="#" class="add-to-bucked">в корзину</a>
-            </div>
-            <div class="item-caption">
-                <a href="#">Профессиональная селфи-палка</a>
-                <p>1&nbsp;500&nbsp;руб</p>
-            </div>
-        </div>
+  
+    <div class="item-block">
+      <div class="item-image">
+        <img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
+        <a href="#" class="add-to-bucked">в корзину</a>
+      </div>
+      <div class="item-caption">
+        <a href="#">Профессиональная селфи-палка</a>
+        <p>1 500 руб</p>
+      </div>
+    </div>
     
-        <div class="waterproof-stick">
-            <div class="item-image">
-                <img src="#" width="1" height="1" alt="Непотопляемая селфи-палка">
-                <a href="#" class="add-to-bucked">в корзину</a>
-            </div>
-            <div class="item-caption">
-                <a href="#">Непотопляемая селфи-палка</a>
-                <p>2&nbsp;500&nbsp;руб</p>
-            </div>
-        </div>
+    <div class="item-block">
+      <div class="item-image">
+        <img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+        <a href="#" class="add-to-bucked">в корзину</a>
+      </div>
+      <div class="item-caption">
+        <a href="#">Непотопляемая селфи-палка</a>
+        <p>2 500 руб</p>
+      </div>
+    </div>
     
-        <div class="friend-stick">
-            <div class="item-image">
-                <img src="#" width="1" height="1" alt="Селфи-палка  &lt; &lt;Следуй за мной &gt; &gt;</a>">
-                <a href="#" class="add-to-bucked">в корзину</a>
-            </div>
-            <div class="item-caption">
-                <a href="#">Селфи-палка  &lt; &lt;Следуй за мной &gt; &gt;</a>
-                <p>4&nbsp;900&nbsp;руб</p>
-            </div>
-        </div>
+    <div class="item-block">
+      <div class="item-image">
+        <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка <<Следуй за мной>>">
+        <a href="#" class="add-to-bucked">в корзину</a>
+        <span class="label-New">New</span>
+      </div>
+      <div class="item-caption">
+        <a href="#">Селфи-палка  &lt; &lt;Следуй за мной &gt; &gt;</a>
+        <p>4 900 руб</p>
+      </div>
     </div>
 
-    <div class="content-slider">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <button class="btn content-prev" type="button">Назад</button>
-        <button class="btn content-next" type="button">Вперёд</button>
+    <div class="pagination">
+      <ul>
+        <li><a class="btn content-prev" href="#">Назад</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a class="btn content-next" href="#">Вперёд</a></li>
+      </ul>
     </div>
-</div>
+  </div>
 </main>
 <!-- Футер -->
 <footer class="main-footer">
-        <div class="footer-top">
-            <div class="footer-logo">
-                <a href="#" class="logo">device</a>
-            </div>
-            <div class="user-block">
-                <a class="user-link enter" href="#">Войти</a>
-                <a class="user-link compare" href="#">Сравнить</a>
-                <a class="user-link basket" href="#">Корзина</a>
-            </div>
-        </div>
+  <div class="footer-top">
+    <div class="footer-logo">
+      <a class="logo">device</a>
+    </div>
+    <div class="user-block">
+      <a class="user-link enter" href="#">Войти</a>
+      <a class="user-link compare" href="#">Сравнить</a>
+      <a class="user-link basket" href="#">Корзина</a>
+    </div>
+  </div>
 
-        <div class="footer-middle">
-            <div class="addres">
-                <p>г. Москва, ул. Строителей, 15</p>  <!-- хочу так же здесь овормить, чтоб при клике сразу перебрасывало в карты, но это зделаю познее, когда узнаю как это далать-->
-            </div>
-            <div class="user-menu">
-            <ul class="footer-nav">
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-            </div>
-            <div class="phone">
-                <a href="tel:+74954959595">+7(495)495-95-95</a>
-            </div>
-        </div>
+  <div class="footer-middle">
+    <div class="addres">
+      <a href="https://www.google.com.ua/maps/place/ул.+Строителей,+15,+Москва,+Росія,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618">г. Москва, ул. Строителей, 15</a>  <!-- хочу так же здесь оформить, чтоб при клике сразу перебрасывало в карты, но это зделаю познее, когда узнаю как это далать-->
+    </div>
         
-        <div class="footer-bottom">
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        <div class="html-academy"></div>
-        </div>
-    </footer>
+    <ul class="footer-nav">
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+           
+    <div class="phone">
+      <a href="tel:+74954959595">+7(495)495-95-95</a>
+    </div>
+  </div>
+        
+  <div class="footer-bottom">
+    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+  <div class="html-academy">
+    <a href="https://htmlacademy.ru"><img src="img/htmlacademy.png" alt="HTMLAcademy"></a>
+  </div>
+  </div>
+</footer>
 </body>
 </html>
 
