@@ -62,9 +62,11 @@
     <span class="section-name filter">фильтр:</span>
     <form action="#" method="post">
       <span class="section-name">Стоимость</span>
-       <input type="range" min="0" max="10000" step="100" value="5000">  <!-- видел разную разметку, не уверен пока какую буду применять, так как и не совсем понимаю механизм ползунка. Дождусь темы об этом, тогда оформлю как надо. Пока что только сделаю видимость что здесь ползунок-->
+      <div class="range-block">
+        <input type="range" min="0" max="10000" step="100" value="5000">
+       </div>  <!-- видел разную разметку, не уверен пока какую буду применять, так как и не совсем понимаю механизм ползунка. Дождусь темы об этом, тогда оформлю как надо. Пока что только сделаю видимость что здесь ползунок-->
         
-    <span class="section-name">Цвет</span>
+    <span class="section-name">Цвет</span><br>
     <div class="checkbox">
       <input type="checkbox" name="black" value="black" id="black">
       <label for="black">Черный</label><br>
@@ -181,7 +183,7 @@
 
   <div class="footer-middle">
     <div class="addres">
-      <a href="https://www.google.com.ua/maps/place/ул.+Строителей,+15,+Москва,+Росія,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618">г. Москва, ул. Строителей, 15</a>  <!-- хочу так же здесь оформить, чтоб при клике сразу перебрасывало в карты, но это зделаю познее, когда узнаю как это далать-->
+      <a href="https://www.google.com.ua/maps/place/ул.+Строителей,+15,+Москва,+Росія,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618" target="_blank">г. Москва, ул. Строителей, 15</a>  <!-- хочу так же здесь оформить, чтоб при клике сразу перебрасывало в карты, но это зделаю познее, когда узнаю как это далать-->
     </div>
         
     <ul class="footer-nav">
@@ -200,7 +202,7 @@
     <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
     <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
   <div class="html-academy">
-    <a href="https://htmlacademy.ru"><img src="img/htmlacademy.png" alt="HTMLAcademy"></a>
+    <a href="https://htmlacademy.ru" target="_blank"><img src="img/htmlacademy.png" alt="HTMLAcademy"></a>
   </div>
   </div>
 </footer>
