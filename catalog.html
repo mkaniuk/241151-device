@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Девайс</title>
+    <title>Каталог товаров</title>
   </head>
 <body>
 <div class="container">
   <header class="main-header">
     <div class="header-logo">
-      <a><p class="logo">device</p></a>
+      <a href="index.html" class="logo">device</a>
     </div>
     <div class="search">
       <form action="#" name="search" method="get">
@@ -62,29 +62,40 @@
     <span class="section-name filter">фильтр:</span>
     <form action="#" method="post">
       <span class="section-name">Стоимость</span>
-       <input type="range" min="0" max="10000" step="100" value="5000" /> - <!-- видел разную разметку, не уверен пока какую буду применять, так как и не совсем понимаю механизм ползунка. Дождусь темы об этом, тогда оформлю как надо. Пока что только сделаю видимость что здесь ползунок-->
+       <input type="range" min="0" max="10000" step="100" value="5000">  <!-- видел разную разметку, не уверен пока какую буду применять, так как и не совсем понимаю механизм ползунка. Дождусь темы об этом, тогда оформлю как надо. Пока что только сделаю видимость что здесь ползунок-->
         
-    <span class="section-name">Цвет</span>>
+    <span class="section-name">Цвет</span>
+    <div class="checkbox">
       <input type="checkbox" name="black" value="black" id="black">
       <label for="black">Черный</label><br>
-
+    </div>
+    <div class="checkbox">
       <input type="checkbox" name="white" value="white" id="white">
       <label for="white">Белый</label><br>
-
+    </div>
+    <div class="checkbox">
       <input type="checkbox" name="blue" value="blue" id="blue">
       <label for="blue">Синий</label><br>
-
+    </div>
+    <div class="checkbox">
       <input type="checkbox" name="red" value="red" id="red">
       <label for="red">Красный</label><br>
-
+    </div>
+    <div class="checkbox">
       <input type="checkbox" name="pink" value="pink" id="pink">
       <label for="pink">Розовый</label>
+    </div>
 
-    <span class="section-name">Bluetooth</span>/>
+    <span class="section-name">Bluetooth</span>
+    <<span class="section-name">Цвет</span>
+    <div class="radio">
       <input type="radio" name="btth-btn" value="Yes" id="btth-yes" checked>
-      <label for="btth-yes">Есть</label><br>
+      <label for="btth-yes">Есть</label>
+    </div>
+    <div class="radio">
       <input type="radio" name="btth-btn" value="No" id="btth-no">
       <label for="btth-no">Нет</label>
+    </div>
       <input type="submit" name="show" value="Показать">
     </form>
   </div>
