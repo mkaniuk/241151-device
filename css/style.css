@@ -1,17 +1,23 @@
 body {
+<<<<<<< HEAD
 	width: 1160px;
 	margin: 0 auto;
 	font-family: OpenSans, Arial, sans-serif;
 	font-size: 15px;
+=======
+	font-family: Open Sans, sans-serif;
+	font-size: 15 px;
+>>>>>>> parent of e0f101a... Подправил после замечаний
 	font-weight: normal;
 	line-height: 30px;
-	color: #444;
+	color: #444444;
+
 }
 
 h1 {
-	font-family: Gilroy, Arial, sans-serif;
+	font-family: Gilroy, sans-serif;
 	font-size: 47px;
-	color: #000;
+	color: #000000;
 	font-weight: bold;
 
 }
@@ -19,7 +25,7 @@ h1 {
 h2 {
 	font-family: Gilroy, sans-serif;
 	font-size: 16px;
-	color: #000;
+	color: #000000;
 	font-weight: bold;
 }
 
