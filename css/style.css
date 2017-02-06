@@ -1,4 +1,6 @@
 body {
+	width: 1160px;
+	margin: 0 auto;
 	font-family: OpenSans, Arial, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
@@ -19,4 +21,311 @@ h2 {
 	font-size: 16px;
 	color: #000;
 	font-weight: bold;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #665a33;
+}
+
+a:active {
+	color: #b29e59;
+}
+
+a:visited{
+	color: #000;
+}
+
+.header-container {
+	width: 1160px;
+	height: 186px;
+	margin-top: 40px;
+	background-color: #ffe27f;
+}
+
+.main-header {
+	width: 1040px;
+	height: 186px;
+	margin: 0 60px;
+	
+}
+
+.logo {
+	position: relative;
+	top: -15px;
+	left: -1px;
+	font-style: Gilroy, sans-serif;
+	font-size: 48px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.logo:hover {
+	color: black;
+}
+
+.logo:active {
+	color: black;
+}
+
+.logo:visited {
+	color: black;
+}
+
+.search {
+	display: inline-block;
+
+}
+
+.user-block {
+	display: inline-block;
+	float: right;
+	width: 500px;
+	font-size: 18px;
+	text-align: right;
+}
+
+.user-block a {
+	padding-left: 60px;
+}
+
+.user-block a:first-child {
+	display: block;
+	float: left;
+	padding-left: 0;
+}
+
+.header-nav,
+.header-nav ul {
+	margin-top: 50px;
+	padding: 0;
+	list-style: none;
+}
+
+.header-nav > li {
+	position: relative;
+	display: inline-block;
+}
+
+.header-nav > li > a {
+	display: block;
+	padding-bottom: 15px;
+	padding-right: 0;
+	font-size: 18px;
+	font-family: Gilroy Bernard MT Cond... sans-serif;
+	text-transform: uppercase;
+	padding-right: 40px
+}
+
+.header-nav .last-menu-article a {
+	padding-right: 0;
+	padding-left: 124px;
+}
+
+.header-nav >li:first-child {
+	margin-right: 320px;
+	padding-bottom: 5px;
+} 
+
+.catalog-nav-left {
+	position: absolute;
+	top: 0;
+	left: -120px;
+	z-index: 1000;
+	width: 1160px;
+	height: 129px;
+	margin-left: 60px;
+	background: #ffe393;
+}
+
+.catalog-nav-left li {
+	padding-left: 60px;
+}
+
+.catalog-nav-center {
+	position: absolute;
+	top: 0;
+	left: 240px;
+	z-index: 1150;
+	white-space: nowrap;
+}
+
+.catalog-nav-right {
+	position: absolute;
+	top: 0;
+	left: 440px;
+	z-index: 1200;
+}
+
+.sub-menu {
+	display: none;
+}
+
+.header-nav > li:hover .sub-menu {
+	display: block;
+} 
+
+.header-nav .catalog-btn:hover {
+	color: #665a33;
+}
+
+
+.header-nav .catalog-btn:active {
+	color: #b29e59;
+}
+ /* слайдер*/
+
+
+.slider-page {
+	display: block;
+	position: relative;
+	width: 1040px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.number-background {
+  width: 1160px;
+  height: 129px;
+  margin-top: -8px;
+  margin-left: -60px;
+  background: #ffe27f;
+}
+
+.number {
+  width: 1040px;
+  font-size: 179.2px;
+  font-weight: bold;
+  margin-top: -60px;
+  text-align: right;
+  color: white;
+  padding-left: 25px;
+}
+
+.img-block {
+  position: absolute;
+  top: 10px;
+}
+
+.slider-text  h2 {
+	font-size: 47px;
+	line-height: 55px;
+}
+
+.device-description {
+	margin-top: -20px;
+	width: 557px;
+	opacity: 0.75;
+}
+
+
+.slider-text {
+  position: absolute;
+  top: -40px;
+  left: 430px;
+  display: inline-block;
+  width: 580px;
+  margin-left: 100px;
+  vertical-align: top;
+  margin-top: 95px;
+  line-height: auto;
+}
+
+
+.line-through {
+  display: block;
+  height: 4px;
+  width: 215px;
+  margin-top: 50px;
+  background:  #ffe27f;
+}
+
+.line-through > a {
+  position: absolute;
+  top: 265px;
+  left: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.device-table {
+  width: 460px;
+  height: 60px;
+  margin-top: 20px; 
+}
+
+.device-table .table-row {
+	display: inline-block;
+	margin-right: 80px;
+
+}
+
+.device-table .table-row:last-child {
+	margin-right: 0;
+}
+
+.up-cell {
+	font-size: 36px;
+}
+
+.down-cell {
+	opacity: 0.75;
+}
+
+.slider-img3 {
+	position: absolute;
+  top: 70px;
+  left: -40px;
+}
+/* переключатель слайдера */
+
+.slider {
+  position: relative;
+  top: 850px;
+  right: 1000px;
+}
+
+.slider input[type=radio] {
+  display: none;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slider-slides {
+  width: 300%;
+  transition: transform 0.8s ease;
+}
+
+.slider-slides .slider-page {
+    float: left;
+    width: 1040px;
+    height: 505px;
+    margin: 0 60px;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background-color: #cccccc;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: #666666;
 }
