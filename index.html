@@ -4,31 +4,31 @@
     <meta charset="utf-8">
     <title>Девайс</title>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
   </head>
 <body>
 
 <div class="container">
-  <header class="main-header">
-  	<div class="logo logo-header">
+  <header class="header">
+  	<div class="logo logo-header logo-inactive">
     	<a>device</a>
-   	</div>
-    <div class="search-form">
+   </div>
+   <div class="top-menu">
+   <div class="search-form">
       <form action="#" name="search" method="get">
         <input type="text" name="search" value="Поиск по сайту" id="search">
         <input type="submit" name="search-btn" value="Найти" id="search-bttn">
       </form>
+   </div>
+  	<div class="header-user-block">
+      	<a class="header-user-link enter" href="#">Войти</a>
+      	<a class="header-user-link compare" href="#">Сравнить</a>
+      	<a class="header-user-link basket" href="#">Корзина</a>
     </div>
-    <div class="user-block">
-    	<div class="user-btms">
-      	<a class="user-link enter" href="#">Войти</a>
-      	<a class="user-link compare" href="#">Сравнить</a>
-      	<a class="user-link basket" href="#">Корзина</a>
-    	</div>
     </div>
     <nav class="header-nav">
-      <ul class="main-nav">
-        <li class="main-nav-catalog"><a href="catalog.html">Каталог товаров</a>
+      <ul class="menu">
+        <li class="menu-catalog"><a href="catalog.html">Каталог товаров</a>
         <div class="sub-menu">
           <ul class="sub-menu-row">         
             <li><a href="#">Виртуальная реальность</a></li>
@@ -46,34 +46,29 @@
         </li> 
         <li class="nav-bttm"><a href="#">Доставка</a></li>
         <li class="nav-bttm"><a href="#">Гарантия</a></li>
-        <li class="main-nav-contacts"><a href="#">Контакты</a></li>
+        <li class="menu-contacts"><a href="#">Контакты</a></li>
       </ul>
     </nav>
 	</header>
 
 
-<main class="main container">
-<!-- Блок со слайдерами товаров -->
-<section class="item-slider">
- <div class="slider-inner">
-    <div class="slider-slides">
-
-<div class="slider-page">
-  <div class="number-background"></div>
-  <div class="number">01</div>
-	<div class="slider-inner">
-		<div class="img-block">
-			<img class="slider-image" src="img/slider-1.png" width="384" height="486" alt="селфи палка/гиря">
-		</div>
-
-		<div class="slider-text">
-			<h2>Делай селфи,<br>как Бен Стиллер!</h2>
-				<div class="device-description">
-					<p>Самая длинная палка для селфи доступна в нашем магазине. <br>Восемь (Восемь, Карл) метров длиной весом и всего 5 килограмм</p>
+<main class="main">
+	<div class="slider">
+	<div class="slide" id="slide1">
+  	<div class="number-background">01</div>
+			<div class="slider-inner">
+				<div class="img-block">
+					<img class="slider-image" src="img/slider-1.png" width="384" height="486" alt="селфи палка/гиря">
 				</div>
-        <span class="line-through"><a href="#">Подробнее</a></span>
+
+				<div class="slider-text">
+					<h2>Делай селфи, как&nbsp;Бен Стиллер!</h2>
+				<div class="device-description">
+					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл) метров длиной весом и всего 5 килограмм</p>
+				</div>
+        	<a class="line-through" href="#">Подробнее</a>
 				<div class="device-table">
-				   <div class="table-row">
+				  <div class="table-row">
 						<p class="up-cell">8,5 м</p>
 						<p class="down-cell">Длина палки</p>
 					</div>
@@ -90,47 +85,45 @@
 	</div>
 </div>
 
-<div class="slider-page">
-  <div class="number-background"></div>
-  <div class="number">02</div>
-	<div class="slider-inner">
-		<div class="img-block">
-			<img class="slider-image" src="img/slider-2.png" width="345" height="485" alt="Модный фитнесс трекер">
-		</div>
+<div class="slide" id="slide2">
+  <div class="number-background">02</div>
+		<div class="slider-inner">
+			<div class="img-block">
+				<img class="slider-image" src="img/slider-2.png" width="345" height="485" alt="Модный фитнесс трекер">
+			</div>
 
-		<div class="slider-text">
-			<h2>Худеем <br>правильно!</h2>
-				<div class="device-description">
-					<p>Мотивирующие фитнесс браслеты помогут найти в себе силы <br>не пропускать занятия и соблюдать диету</p>
-				</div>
-				<span class="line-through"><a href="#">Подробнее</a></span>
+			<div class="slider-text">
+				<h2>Худеем правильно!</h2>
+			<div class="device-description">
+				<p>Мотивирующие фитнесс браслеты помогут найти в себе силы не&nbsp;пропускать занятия и соблюдать диету</p>
+			</div>
+				<a class="line-through" href="#">Подробнее</a>
 			
-				<div class="device-table">
-					<div class="table-row">
-						<p class="up-cell">48 часов</p>
-						<p class="down-cell">Без подзарядки</p>
-					</div>
+			<div class="device-table">
+				<div class="table-row">
+					<p class="up-cell">48 часов</p>
+					<p class="down-cell">Без подзарядки</p>
 				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
 	
 
-<div class="slider-page">
-  <div class="number-background"></div>
-  <div class="number">03</div>
-	<div class="slider-inner">
-			<div class="img-block slider-img3">
+<div class="slide" id="slide3">
+  <div class="number-background">03</div>
+		<div class="slider-inner">
+			<div class="img-block">
 				<img class="slider-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокопер с лазерной укаской для кота">
 			</div>
 
 			<div class="slider-text">
-				<h2>Пархает как бабочка, <br>жалит как пчела</h2>
+				<h2 class="kvadrokopter">Пархает как бабочка, жалит как пчела</h2>
 			<div class="device-description">
-				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощьным лазером, замаскированным под стандартную камеру</p>
+				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощьным лазером, замаскированным под стандартную камеру</p>
 			</div>
-			<span class="line-through"><a href="#">Подробнее</a></span>
+				<a class="line-through" href="#">Подробнее</a>
 			<div class="device-table">
 				<div class="table-row">
 					<p class="up-cell">800м</p>
@@ -144,79 +137,69 @@
 		</div>
 	</div>
 </div>
-
-		
-		<div class="slider">
-			<form action="#" method="post">
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
-          </div>
-			</form>
-		</div>
-	</div>
+<div class="slider-controls">
+  <label for="bttn1"></label>
+  <label for="bttn2"></label>
+  <label for="bttn3"></label>
 </div>
-</section>
 </div>
-
 <!-- Категории товаров на сайте -->
-	<div class="category"> 
 		<ul class="category-list">
 			<li>
-				<div class="icon"></div>
-				<div class="text">Визуальная реальность</div>
+				<div class="category-icon visual-reality"><a href="#"></a></div>
+				<a href="#" class="category-text">Визуальная реальность</a>
 			</li>
 			<li>
-				<div class="icon"></div>
-				<div class="text">Моноподы для селфи</div>
+				<div class="category-icon monopods"><a href="#"></a></div>
+				<a href="#" class="category-text">Моноподы для&nbsp;селфи</a>
 			</li>
 			<li>
-				<div class="icon"></div>
-				<div class="text">Экшн-камеры</div>
+				<div class="category-icon cameras"><a href="#"></a></div>
+				<a href="#" class="category-text">Экшн-камеры</a>
 			</li>
 			<li>
-				<div class="icon"></div>
-				<div class="text">Фитнесс браслеты</div>
+				<div class="category-icon bracelet"><a href="#"></a></div>
+				<a href="#" class="category-text">Фитнесс браслеты</a>
 			</li>
 			<li>
-				<div class="icon"></div>
-				<div class="text">Умные часы</div>
+				<div class="category-icon watches"><a href="#"></a></div>
+				<a href="#" class="category-text">Умные часы</a>
 			</li>
 			<li>
-				<div class="icon"></div>
-				<div class="text">Квадрокоптеры</div>
+				<div class="category-icon quadrocopters"><a href="#"></a></div>
+				<a href="#" class="category-text">Квадрокоптеры</a>
 			</li>
 		</ul>
-	</div>
+</div>
 <!--Блок сервисов  -->
-	<section class="service">
-		<div class="service-list">
-			<!-- оставляю место на секцыю для переключения слайдов, пока просто поставлю названия переключателей для смысла-->
-			<p class="line-through shipping">Доставка</p>
-			<p class="line-through guarantee">Гарантия</p>
-			<p class="line-through credit">Кредит</p>
+	<section class="service-background">
+	<div class="container">
+	<div class="service-slider">
+		<div class="service-bttms">
+			<span class="service-line-through shipping">Доставка</span>
+			<span class="service-line-through warranty">Гарантия</span>
+			<span class="service-line-through credit">Кредит</span>
 		</div>
-		<div class="shipping-description">
+		<div class="service-slide delivery-slide">
 			<h2>Доставка</h2>
 			<p>Мы с удовольствием доставим ваш товар прямо к вашему подьезду совершенно бесплатно! Ведь мы неплохо заработаем поднимая его на ваш этаж</p>
 		</div>
 
-		<div class="guarantee-description">
+		<div class="service-slide warranty-slide">
 			<h2>Гарантия</h2>
-			<p>Если из за восгарания купленного у нас товара у вас сгорит дом - не пережывайте, мы выдадим вам новый. Товар, а не дом, конечно же</p>
+			<p>Если из за восгарания купленного у нас товара у вас сгорит дом - не пережывайте, мы выдадим вам новый. Товар,&nbsp;а&nbsp;не&nbsp;дом, конечно же</p>
 		</div>
 
-		<div class="credit-description">
+		<div class="service-slide credit-slide">
 			<h2>Кредит</h2>
-			<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас найболее выгодные условия кредита. Выгодные для нашего банка разумеется</p>
+			<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас найболее выгодные условия&nbsp;кредита. Выгодные для нашего банка разумеется</p>
 		</div>
+		</div>
+	</div>	
 	</section>
 
 <!-- Блок партнёров -->
+<div class="container">
 	<div class="partner">
 		<div class="partner-block">
 			<a href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="dji"></a>
@@ -242,32 +225,33 @@
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
 			</ul>
-			<a class="line-through" href="#">Подробнее о нас</a>
+			<a class="about-us-bttm-line" href="#">Подробнее о нас</a>
 		</section>
 		<section class="contacts">
 			<h2>Контакты</h2>
 			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно вы можете проверить работоспособность покупки, всякое бывает</p>
-			<img src="img/map.jpg" width="560" height="222" alt="карта">
-			<a class="line-through" href="#">Напишите нам</a>
+			<img src="img/map.jpg" width="560" height="222" alt="карта"><br>
+			<a class="contacts-bttm-line" href="#">Напишите нам</a>
 		</section>
 	</div>
+</div>	
 </main>
 <!-- Футер -->
 <footer class="main-footer">
   <div class="footer-top">
-    <div class="footer-logo">
-      <a class="logo">device</a>
+    <div class="logo footer-logo">
+      <a>device</a>
     </div>
-    <div class="user-block">
-      <a class="user-link enter" href="#">Войти</a>
-      <a class="user-link compare" href="#">Сравнить</a>
-      <a class="user-link basket" href="#">Корзина</a>
+    <div class="footer-user-block">
+      <a class="footer-user-link enter-footer" href="#">Войти</a>
+      <a class="footer-user-link compare-footer" href="#">Сравнить</a>
+      <a class="footer-user-link basket-footer" href="#">Корзина</a>
     </div>
   </div>
 
   <div class="footer-middle">
     <div class="addres">
-      <a href="https://www.google.com.ua/maps/place/ул.+Строителей,+15,+Москва,+Росія,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618" target="_blank">г. Москва, ул. Строителей, 15</a>  <!-- хочу так же здесь оформить, чтоб при клике сразу перебрасывало в карты, но это зделаю познее, когда узнаю как это далать-->
+      <a href="https://goo.gl/maps/1LFSRPVq5rL2" target="_blank">г. Москва, ул. Строителей, 15</a>  <!-- хочу так же здесь оформить, чтоб при клике сразу перебрасывало в карты, но это зделаю познее, когда узнаю как это далать-->
     </div>
         
     <ul class="footer-nav">
