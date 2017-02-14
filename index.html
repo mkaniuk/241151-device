@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
-    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 <body>
 
@@ -12,22 +12,22 @@
   <header class="header">
   	<div class="logo logo-header logo-inactive">
     	<a>device</a>
-   	</div>
-   	<div class="top-menu">
-   	<div class="search-form">
+   </div>
+   <div class="top-menu clearfix">
+   <div class="search-form">
       <form action="#" name="search" method="get">
         <input type="text" name="search" value="Поиск по сайту" id="search">
         <input type="submit" name="search-btn" value="Найти" id="search-bttn">
       </form>
-   	</div>
+   </div>
   	<div class="header-user-block">
-      <a class="header-user-link enter" href="#">Войти</a>
-      <a class="header-user-link compare" href="#">Сравнить</a>
-      <a class="header-user-link basket" href="#">Корзина</a>
+      	<a class="header-user-link enter" href="#">Войти</a>
+      	<a class="header-user-link compare" href="#">Сравнить</a>
+      	<a class="header-user-link basket" href="#">Корзина</a>
     </div>
     </div>
     <nav class="header-nav">
-      <ul class="menu">
+      <ul class="menu clearfix">
         <li class="menu-catalog"><a href="catalog.html">Каталог товаров</a>
         <div class="sub-menu">
           <ul class="sub-menu-row">         
@@ -56,7 +56,7 @@
 	<div class="slider">
 	<div class="slide" id="slide1">
   	<div class="number-background">01</div>
-			<div class="slider-inner">
+			<div class="slider-inner clearfix">
 				<div class="img-block">
 					<img class="slider-image" src="img/slider-1.png" width="384" height="486" alt="селфи палка/гиря">
 				</div>
@@ -87,7 +87,7 @@
 
 <div class="slide" id="slide2">
   <div class="number-background">02</div>
-		<div class="slider-inner">
+		<div class="slider-inner clearfix">
 			<div class="img-block">
 				<img class="slider-image" src="img/slider-2.png" width="345" height="485" alt="Модный фитнесс трекер">
 			</div>
@@ -113,7 +113,7 @@
 
 <div class="slide" id="slide3">
   <div class="number-background">03</div>
-		<div class="slider-inner">
+		<div class="slider-inner clearfix">
 			<div class="img-block">
 				<img class="slider-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокопер с лазерной укаской для кота">
 			</div>
@@ -144,7 +144,7 @@
 </div>
 </div>
 <!-- Категории товаров на сайте -->
-		<ul class="category-list">
+		<ul class="category-list clearfix">
 			<li>
 				<div class="category-icon visual-reality"><a href="#"></a></div>
 				<a href="#" class="category-text">Визуальная реальность</a>
@@ -215,7 +215,7 @@
 		</div>
 	</div>
 <!-- Блок "Информацыя о компании" -->
-	<div class="company-info">
+	<div class="company-info clearfix">
 		<section class="about-us">
 			<h2>О нас</h2>
 			<p>Огромный выбог гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
@@ -238,8 +238,8 @@
 </main>
 <!-- Футер -->
 <footer class="main-footer">
-  <div class="footer-top">
-    <div class="logo footer-logo">
+  <div class="footer-top clearfix">
+    <div class="logo footer-logo logo-inactive">
       <a>device</a>
     </div>
     <div class="footer-user-block">
@@ -248,31 +248,35 @@
       <a class="footer-user-link basket-footer" href="#">Корзина</a>
     </div>
   </div>
-
   <div class="footer-middle">
     <div class="addres">
-      <a href="https://goo.gl/maps/1LFSRPVq5rL2" target="_blank">г. Москва, ул. Строителей, 15</a>  <!-- хочу так же здесь оформить, чтоб при клике сразу перебрасывало в карты, но это зделаю познее, когда узнаю как это далать-->
-    </div>
-        
+      <a href="https://goo.gl/maps/1LFSRPVq5rL2" target="_blank">г. Москва, ул. Строителей, 15</a> 
+    </div>    
     <ul class="footer-nav">
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Контакты</a></li>
-    </ul>
-           
+    </ul>    
     <div class="phone">
-      <a href="tel:+74954959595">+7(495)495-95-95</a>
+      <a href="tel:+74954959595">Тел: +7(495)495-95-95</a>
     </div>
-  </div>
-        
+  </div>  
   <div class="footer-bottom">
-    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+  <div class="social-block">
+    <a class="social-bttn" href="#">
+    	<img src="img/facebook.png" alt="Фейсбук">
+    </a>
+    <a class="social-bttn" href="#">
+    	<img src="img/insta.png" alt="Инстаграм">
+    </a>
+    <a class="social-bttn" href="#">
+    	<img src="img/twitter.png" alt="Твиттер">
+    </a>
+  </div>  
   <div class="html-academy">
-    <a href="https://htmlacademy.ru" target="_blank"><img src="img/htmlacademy.png" alt="HTMLAcademy"></a>
+    <a href="https://htmlacademy.ru" target="_blank"></a>
   </div>
-  </div>
+</div>
 </footer>
 </body>
 </html>

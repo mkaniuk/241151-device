@@ -22,7 +22,12 @@
 	width: 1160px;
 	padding: 0 20px;
 	margin: 0 auto;
-	
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear:both;
 }
 
 .header {
@@ -60,14 +65,7 @@
 
 .top-menu {
 	width: 1040px;
-	height: 50px;
 	margin-top: 10px;
-}
-
-.top-menu:after {
-	content: "";
-	display: table;
-	clear:both;
 }
 
 .search-form {
@@ -109,7 +107,6 @@
 
 .header-user-block {
 	width: 500px;
-	height: 29px;
 	float: right;
 	font-family: Open Sans Regular, Arial, sans-serif;;
 	font-size: 15px;
@@ -133,11 +130,11 @@
 	padding-left: 26px;
 }
 
-.user-link:hover {
+.header-user-link:hover {
 	opacity: 0.5;
 }
 
-.user-link:active {
+.header-user-link:active {
 	opacity: 0.3;
 }
 
@@ -173,7 +170,6 @@
 
 .header-nav {
 	width: 1040px;
-	margin-top: 25px;
 	padding-bottom: 25px;
 }
 
@@ -205,8 +201,6 @@
 	float: left;
 	margin-left: -40px;
 	margin-right: 294px;
-	padding-right: 35px;
-	padding: 0;
 }
 
 .nav-bttm {
@@ -215,12 +209,6 @@
 
 .menu-contacts {
 	float: right;
-}
-
-.menu:after {
-	content: "";
-	display: table;
-	clear:both;
 }
 
 .menu-catalog:hover .sub-menu {
@@ -257,8 +245,8 @@
 	opacity: 0.5;
 	text-transform: none;
 }
-
- /*слайдер*/
+/*==============================================================================================*/
+ /*слайдер товаров*/
 
 .slider {
 	position: relative;
@@ -318,13 +306,6 @@
 	width: 500px;
 	margin-right: 62px;
 	margin-top: 40px;
-}
-
-.slider-inner:after {
-	content: "";
-	display: table;
-	clear: both;
-	width: 1100px;
 }
 
 .slider-text .kvadrokopter {
@@ -409,19 +390,13 @@
 .slide:first-child {
     display: block;
 }
-
+/*==============================================================================================*/
 /*список категорий товаров*/
 
 .category-list {
 	width: 1160px;
 	padding: 0;
 	margin-bottom: 90px;
-}
-
-.category-list:after {
-	content: "";
-	display: table;
-	clear:both;
 }
 
 .category-list li {
@@ -487,7 +462,7 @@
 	color: #000;
 	margin-top: 35px;
 }
-
+/*==============================================================================================*/
 /* слайдер-услуг*/
 
 .service-background {
@@ -501,7 +476,7 @@
 .service-bttms{
 	float: left;
 	width: 255px;
-	height:320px;
+	min-height:320px;
 	padding-right: 22px;
 	border: none;
 	border-right: 7px solid black;
@@ -553,23 +528,15 @@
 }
 
 .service-slider {
+	position: relative;
 	width: 1160px;
-	height: 791px;
-}
-
-.service-slider:after {
-	content: "";
-	display: table;
-	clear: both;
-	height: 20px;
-	background: red;
 }
 
 .service-slide {
-	position: relative;
+	position: absolute;
+	right: 0;
 	float: right;
 	width: 510px;
-	height: 227px;
 	margin-top: 30px;
 	padding-right: 250px;
 }
@@ -626,53 +593,40 @@
 	display: block;
 }
 
-
+/*==============================================================================================*/
 /*блок партнеров*/
 
 .partner {
 	width: 1160px;
 	margin-top: 100px;
 	margin-bottom: 100px;
-}
-
-.partner{
-	content: "";
-	display: table;
-	clear: both;	
+	padding: 0;
 }
 
 .partner-block {
 	display: inline-block;
-	text-align: justify;
-	margin: 0 10px;
+	margin: 0 17px;
 	opacity: 0.2;
 }
 
 .partner-block:first-child {
-	float: left;
 	margin-left: 0;
 }
 
 .partner-block:last-child {
-	float: right;
+	margin-right: 0;
 }
 
 .partner-block:hover{
 	opacity: 1;
 }
 
-
+/*==============================================================================================*/
 /*Блок "Информацыя о компании"*/
 
 .company-info {
 	width: 1160px;
-	margin-bottom: 80px;
-}
-
-.company-info:after {
-	content: "";
-	display: table;
-	clear: both;
+	margin-bottom: 92px;
 }
 
 .about-us {
@@ -738,8 +692,8 @@
 }
 
 .delivery-list {
-	margin-top: 62px;
-	margin-bottom: 38px;
+	margin-top: 32px;
+	margin-bottom: 70px;
 	padding-left: 0;
 }
 
@@ -769,6 +723,7 @@
 }
 
 .about-us-bttm-line {
+	display: inline-block;
 	font-family: Gilroy Extra Bold;
 	font-size: 18px;
 	letter-spacing: 4px;
@@ -785,6 +740,7 @@
   height: 8px;
   background: #f7e296; 
   margin-top: -14px;
+  margin-left: -20px;
 }
 
 .about-us-bttm-line:hover:after {
@@ -804,6 +760,7 @@
 }
 
 .contacts-bttm-line {
+	display: inline-block;
 	font-family: Gilroy Extra Bold;
 	font-size: 18px;
 	letter-spacing: 4px;
@@ -820,6 +777,7 @@
   height: 8px;
   background: #f7e296; 
   margin-top: -14px;
+  margin-left: -40px;
 }
 
 .contacts-bttm-line:hover:after {
@@ -833,31 +791,247 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
+/*==============================================================================================*/
 /*Футер*/
 
-
 .main-footer {
+	width: 100%;
 	background: #444;
 	color: #fff;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
-.main-footer .footer-top {
+.footer-top {
 	width: 1160px;
 	margin: 0 auto;
-	padding-top: 65px;
-}
-
-.footer-top:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.footer-user-block {
-	width: 360px
-	float: right;
 }
 
 .footer-logo {
 	float: left;
+	color: #ffe27f;
+}
+
+.footer-logo:hover {
+	color: #ffc600;
+}
+
+.footer-logo:active {
+	opacity: 0.3;
+}
+
+.footer-user-block {
+	width: 360px;
+	float: right;
+	text-align: right;
+}
+
+.footer-user-link {
+	position: relative;
+	display: inline-block;
+	font-family: Open Sans Regular, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	color: white;
+	text-decoration: none;
+	padding-left: 20px;
+	margin-left: 35px;
+	opacity: 0.7;
+}
+.footer-user-link::before {
+	content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: url(../img/sprite.png) no-repeat;
+}
+
+.enter-footer::before  {
+	background-position: 0px -340px;
+}
+
+.compare-footer::before  {
+	background-position: 0px -320px;
+}
+
+.basket-footer::before  {
+	background-position: 0px -298px;
+}
+
+.enter-footer:hover:before {
+	background: url(../img/sprite.png) no-repeat 0 -362px;
+}
+
+.compare-footer:hover:before {
+	background: url(../img/sprite.png) no-repeat 0 -384px;
+}
+
+.basket-footer:hover:before {
+	background: url(../img/sprite.png) no-repeat 0 -404px;
+}
+
+.enter-footer:active:before {
+	background: url(../img/sprite.png) no-repeat 0 -362px;
+	opacity: 0.3;
+}
+
+.compare-footer:active:before {
+	background: url(../img/sprite.png) no-repeat 0 -384px;
+	opacity: 0.3;
+}
+
+.basket-footer:active:before {
+	background: url(../img/sprite.png) no-repeat 0 -404px;
+	opacity: 0.3;
+}
+
+.footer-middle {
+	width: 1160px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.addres {
+	display: inline-block;
+}
+
+.addres a {
+	width: 250px;
+	font-family: Open Sans Light, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 32px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-nav {
+	display: inline-block;
+	font-family: Gilroy Extra Bold, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	text-align: center;
+	margin: 0 105px;
+}
+
+.footer-nav li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 14px;
+}
+
+.footer-nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #fff;
+}
+
+.footer-nav a:hover {
+	opacity: 0.6;
+}
+
+.footer-nav a:active {
+	opacity: 0.3;
+}
+
+.phone {
+	display: inline-block;
+	text-align: right;
+	margin-left: 76px;
+}
+
+.phone a {
+	font-family: Open Sans Light, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.phone a:hover {
+	opacity: 0.6;
+}
+
+.phone a:active {
+	opacity: 0.3;
+}
+
+.footer-bottom {
+	position: relative;
+	width: 1160px;
+	margin: 0 auto;
+	margin-top: 55px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.footer-bottom:before {
+	content: "";
+	display: block; 
+	position: absolute;
+	top: 50%;
+	width: 80px;
+	height: 7px;
+	background-color: #ffe27f;
+}
+
+.social-block {
+	display: inline-block;
+	width: 196px;
+	margin-left: 15px;
+}
+
+.social-bttn {
+	margin-right: 12px;
+	text-decoration: none;
+	opacity: 0.3;
+}
+
+.social-bttn:hover {
+	opacity: 1;
+}
+
+.social-bttn:active {
+	opacity: 0.1;
+}
+
+.html-academy {
+	content: "";
+	display: block; 
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 27px;
+	height: 34px;
+	margin-left: 440px;
+	background: url(../img/sprite2.png) no-repeat 0 0;
+}
+
+.html-academy a {
+	position: absolute;  
+  top: 0;  
+  left: 0; 
+  z-index: 1;  
+  display: block;  
+  width: 100%;  
+  height: 100%;     
+}
+
+.html-academy:hover {
+	background-position: 0 -44px;
+}
+
+.html-academy:active {
+	background: url(../img/sprite2.png) no-repeat 0 -44px;
+	opacity: 0.3;
+}
+/*==============================================================================================*/
+/*Страница каталога*/
+
+.content-head h1 {
+	font-family: Gilroy Extra Bold, Arial, sans-serif;
+	font-size: 47px;
+	line-height: 47px;
 }

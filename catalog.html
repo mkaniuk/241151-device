@@ -3,31 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
-    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 <body>
 
 <div class="container">
   <header class="header">
-    <div class="logo logo-header">
+    <div class="logo logo-header logo-inactive">
       <a href="index.html">device</a>
-    </div>
-    <div class="top-menu">
-    <div class="search-form">
+   </div>
+   <div class="top-menu clearfix">
+   <div class="search-form">
       <form action="#" name="search" method="get">
         <input type="text" name="search" value="Поиск по сайту" id="search">
         <input type="submit" name="search-btn" value="Найти" id="search-bttn">
       </form>
-    </div>
+   </div>
     <div class="header-user-block">
-      <a class="header-user-link enter" href="#">Войти</a>
-      <a class="header-user-link compare" href="#">Сравнить</a>
-      <a class="header-user-link basket" href="#">Корзина</a>
+        <a class="header-user-link enter" href="#">Войти</a>
+        <a class="header-user-link compare" href="#">Сравнить</a>
+        <a class="header-user-link basket" href="#">Корзина</a>
     </div>
     </div>
     <nav class="header-nav">
-      <ul class="menu">
+      <ul class="menu clearfix">
         <li class="menu-catalog"><a>Каталог товаров</a>
         <div class="sub-menu">
           <ul class="sub-menu-row">         
@@ -52,10 +52,9 @@
   </header>
 
 
-
 <main class=" main container"> 
 <!-- Заголовок страницы -->
-  <section class="сontent-head">
+  <section class="content-head">
     <h1>Моноподы для селфи</h1>
     <ul id="breadcrumbs-one">
       <li><a href="index.html">Главная</a></li>
@@ -177,42 +176,46 @@
 </main>
 <!-- Футер -->
 <footer class="main-footer">
-  <div class="footer-top">
-    <div class="footer-logo">
-      <a class="logo">device</a>
+  <div class="footer-top clearfix">
+    <div class="logo footer-logo logo-inactive">
+      <a>device</a>
     </div>
-    <div class="user-block">
-      <a class="user-link enter" href="#">Войти</a>
-      <a class="user-link compare" href="#">Сравнить</a>
-      <a class="user-link basket" href="#">Корзина</a>
+    <div class="footer-user-block">
+      <a class="footer-user-link enter-footer" href="#">Войти</a>
+      <a class="footer-user-link compare-footer" href="#">Сравнить</a>
+      <a class="footer-user-link basket-footer" href="#">Корзина</a>
     </div>
   </div>
-
   <div class="footer-middle">
     <div class="addres">
-      <a href="https://www.google.com.ua/maps/place/ул.+Строителей,+15,+Москва,+Росія,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618" target="_blank">г. Москва, ул. Строителей, 15</a>  <!-- хочу так же здесь оформить, чтоб при клике сразу перебрасывало в карты, но это зделаю познее, когда узнаю как это далать-->
-    </div>
-        
+      <a href="https://goo.gl/maps/1LFSRPVq5rL2" target="_blank">г. Москва, ул. Строителей, 15</a> 
+    </div>  
     <ul class="footer-nav">
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Контакты</a></li>
-    </ul>
-           
+    </ul>   
     <div class="phone">
-      <a href="tel:+74954959595">+7(495)495-95-95</a>
+      <a href="tel:+74954959595">Тел: +7(495)495-95-95</a>
     </div>
   </div>
         
   <div class="footer-bottom">
-    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+  <div class="social-block">
+    <a class="social-bttn" href="#">
+      <img src="img/facebook.png" alt="Фейсбук">
+    </a>
+    <a class="social-bttn" href="#">
+      <img src="img/insta.png" alt="Инстаграм">
+    </a>
+    <a class="social-bttn" href="#">
+      <img src="img/twitter.png" alt="Твиттер">
+    </a>
+  </div>  
   <div class="html-academy">
-    <a href="https://htmlacademy.ru" target="_blank"><img src="img/htmlacademy.png" alt="HTMLAcademy"></a>
+    <a href="https://htmlacademy.ru" target="_blank"></a>
   </div>
-  </div>
+</div>
 </footer>
 </body>
 </html>
-
