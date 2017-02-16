@@ -22,6 +22,28 @@
     font-weight: 100;
 }
 
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/gilroy/Gilroyextrabold.woff) format("woff");
+    font-weight: 700;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/gilroy/Gilroylight.woff) format("woff");
+    font-weight: 100;
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/open_sans/OpenSans-Regular.woff) format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/open_sans/OpenSans-Light.woff) format("woff");
+    font-weight: 100;
+}
+
 .container {
 	width: 1160px;
 	padding: 0 20px;
@@ -591,7 +613,8 @@
 }
 
 .service-slide h2 {
-	font-family: GilroyExtra, Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 47px;
 	line-height: normal;
 	margin-bottom: 25px;
