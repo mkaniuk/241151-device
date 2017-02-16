@@ -1,27 +1,32 @@
 
 
 @font-face {
-    font-family: Gilroy Extra Bold;
+    font-family: Gilroy;
     src: url(../fonts/gilroy/Gilroyextrabold.ttf);
+    font-weight: 700;
 }
 @font-face {
-    font-family: Gilroy Light;
+    font-family: Gilroy;
     src: url(../fonts/gilroy/Gilroylight.ttf);
+    font-weight: 100;
 }
 @font-face {
-    font-family: Open Sans Regular;
+    font-family: OpenSans;
     src: url(../fonts/open_sans/OpenSans-Regular.ttf);
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: Open Sans Light;
+    font-family: OpenSans;
     src: url(../fonts/open_sans/OpenSans-Light.ttf);
+    font-weight: 100;
 }
 
 .container {
 	width: 1160px;
 	padding: 0 20px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .clearfix:after {
@@ -32,14 +37,15 @@
 
 .header {
 	width: 1040px;
-	padding: 0 60px;
+	padding: 2px 60px;
 	background: #ffe27f;
 	box-shadow: inset 0 23px 0 0 white;	
 }
 
 .logo {
 	width: 190px;
-	font-family: Gilroy Extra Bold, Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 48px;
 	line-height: 48px;
 	text-transform: uppercase;
@@ -76,7 +82,8 @@
 
 #search {
 	width: 355px;
-	font-family: Open Sans Regular, Arial, sans-serif;
+	font-family: OpenSans, Arial, sans-serif;
+	font-weight: 400;
 	font-size: 15px;
 	line-height: 36px;
 	padding-left: 36px;
@@ -97,7 +104,8 @@
 #search-bttn {
 	width: 85px;
 	height: 48px;
-	font-family: Open Sans Regular, Arial, sans-serif;
+	font-family: OpenSans, Arial, sans-serif;
+	font-weight: 400;
 	font-size: 15px;
 	line-height: 36px;
 	background: #ffe27f;
@@ -108,7 +116,8 @@
 .header-user-block {
 	width: 500px;
 	float: right;
-	font-family: Open Sans Regular, Arial, sans-serif;;
+	font-family: OpenSans, Arial, sans-serif;
+	font-weight: 400;
 	font-size: 15px;
 	line-height: 36px;
 	text-align: right;
@@ -174,7 +183,8 @@
 }
 
 .menu a {
-	font-family: Gilroy Extra Bold, Arial sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 32px;
 	letter-spacing: 3px;
@@ -238,7 +248,8 @@
 }
 
 .sub-menu a {
-	font-family: Open Sans Light, Arial, sans-serif;
+	font-family: OpenSans, Arial, sans-serif;
+	font-weight: 100;
 	font-size: 15px;
 	line-height: 36px;
 	letter-spacing: 0;
@@ -267,7 +278,8 @@
   width: 1110px;
   height: 115px;
   background: #ffe27f;
-  font-family: Gilroy Extra Bold, Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 700;
   font-size: 179px;
   line-height: 160px;
   text-align: right;
@@ -314,7 +326,8 @@
 
 .slider-text  h2 {
 	width: 400px;
-	font-family:  Gilroy Extra Bold;
+	font-family:  Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 47px;
 	line-height: 55px;
 	margin-bottom: 20px;
@@ -322,14 +335,16 @@
 
 .device-description {
 	width: 480px;
-	font-family: Open Sans Light, Arial, sans-serif;
+	font-family: OpenSans, Arial, sans-serif;
+	font-weight: 100;
 	font-size: 15px;
 	line-height: 30px;
 	margin-bottom: 53px;
 }
 
 .line-through {
-	font-family: Gilroy Extra Bold;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
@@ -369,14 +384,16 @@
 }
 
 .up-cell {
-	font-family: Gilroy Light, Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 100;
 	font-size: 36px;
 	line-height: 64px;
 	margin: 0;
 }
 
 .down-cell {
-	font-family: Open Sans Light, Arial, sans-serif;
+	font-family: OpenSans, Arial, sans-serif;
+	font-weight: 100;
 	font-size: 13px;
 	line-height: 13px;
 	margin-top: 5px;
@@ -455,7 +472,8 @@
 .category-text {
 	display: block;
 	width: 150px;
-	font-family: Gilroy Extra Bold, Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 18px;
 	text-decoration: none;
@@ -485,7 +503,8 @@
 .service-line-through {
 	display: inline-block;
 	width: 165px;
-	font-family: Gilroy Extra Bold, Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 18px;
 	letter-spacing: 3px;
@@ -572,7 +591,7 @@
 }
 
 .service-slide h2 {
-	font-family: Gilroy Extra Bold, Arial, sans-serif;
+	font-family: GilroyExtra, Arial, sans-serif;
 	font-size: 47px;
 	line-height: normal;
 	margin-bottom: 25px;
@@ -580,7 +599,8 @@
 
 .service-slide p {
 	width: 420px;
-	font-family: Open Sans Light, Arial, sans-serif;
+	font-family: OpenSans, Arial, sans-serif;
+	font-weight: 100;
 	font-size: 15px;
 	line-height: 30px;
 }
@@ -605,7 +625,8 @@
 
 .partner-block {
 	display: inline-block;
-	margin: 0 17px;
+	margin-left: 17px;
+	margin-right: 17px;
 	opacity: 0.2;
 }
 
@@ -679,13 +700,15 @@
 
 
 .company-info h2 {
-	font-family: Gilroy Extra Bold, Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 47px;
 	line-height: 53px;
 }
 
 .company-info p {
-	font-family: Open Sans Regular, Arial, sans-serif;
+	font-family: OpenSansReg, Arial, sans-serif;
+	font-weight: 400;
 	font-size: 15px;
 	line-height: 30px;
 	margin-top: 30px;
@@ -700,7 +723,8 @@
 .delivery-list li {
 	position: relative;
 	display: block;
-	font-family: Gilroy Extra Bold, Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 15px;
 	line-height: 30px;
 	padding-top: 10px;
@@ -724,7 +748,8 @@
 
 .about-us-bttm-line {
 	display: inline-block;
-	font-family: Gilroy Extra Bold;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: 4px;
 	text-transform: uppercase;
@@ -761,7 +786,8 @@
 
 .contacts-bttm-line {
 	display: inline-block;
-	font-family: Gilroy Extra Bold;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: 4px;
 	text-transform: uppercase;
@@ -804,7 +830,6 @@
 
 .footer-top {
 	width: 1160px;
-	margin: 0 auto;
 }
 
 .footer-logo {
@@ -829,7 +854,8 @@
 .footer-user-link {
 	position: relative;
 	display: inline-block;
-	font-family: Open Sans Regular, Arial, sans-serif;
+	font-family: OpenSans, Arial, sans-serif;
+	font-weight: 400;
 	font-size: 15px;
 	line-height: 36px;
 	color: white;
@@ -889,7 +915,6 @@
 
 .footer-middle {
 	width: 1160px;
-	margin: 0 auto;
 	margin-top: 20px;
 }
 
@@ -899,7 +924,8 @@
 
 .addres a {
 	width: 250px;
-	font-family: Open Sans Light, Arial, sans-serif;
+	font-family: OpenSans, Arial, sans-serif;
+	font-weight: 100;
 	font-size: 15px;
 	line-height: 32px;
 	color: #fff;
@@ -908,11 +934,13 @@
 
 .footer-nav {
 	display: inline-block;
-	font-family: Gilroy Extra Bold, Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 18px;
 	text-align: center;
-	margin: 0 105px;
+	margin-left: 105px;
+	margin-right: 105px;
 }
 
 .footer-nav li {
@@ -943,7 +971,8 @@
 }
 
 .phone a {
-	font-family: Open Sans Light, Arial, sans-serif;
+	font-family: OpenSans, Arial, sans-serif;
+	font-weight: 100;
 	font-size: 15px;
 	line-height: 30px;
 	color: #fff;
@@ -961,7 +990,6 @@
 .footer-bottom {
 	position: relative;
 	width: 1160px;
-	margin: 0 auto;
 	margin-top: 55px;
 	text-align: center;
 	vertical-align: middle;
@@ -1031,7 +1059,106 @@
 /*Страница каталога*/
 
 .content-head h1 {
-	font-family: Gilroy Extra Bold, Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
 	font-size: 47px;
-	line-height: 47px;
+	line-height: 60px;
+	margin-left: 60px;
+	margin-bottom: 12px;
+}
+/*==============================================================================================*/
+/*Хлебные крошки*/
+
+.content-head .breadcrumbs {
+	margin-top: 0;
+	padding: 0;
+	margin-left: 60px;
+	list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+	display: inline-block;
+	margin-right: 33px;
+}
+
+.breadcrumbs a {
+	font-family: OpenSans, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 36px;
+	text-decoration: none;
+	color: #000;
+	opacity: 0.3;
+}
+
+.breadcrumbs li:hover {
+	opacity: 0.6;
+}
+
+.breadcrumbs li:active {
+	opacity: 0.1
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -18px;
+  z-index: 1;
+ 	width: 5px;
+  height: 5px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs li:last-child::after {
+  display: none;
+}
+
+/*==============================================================================================*/
+/**/
+
+.search-filter {
+	float: left;
+	width: 270px;
+	vertical-align: top;
+	background-color: #eee;
+}
+
+.result-container {
+	float: right;
+	width: 820px;
+}
+
+.item-block {
+	display: inline-block;
+}
+
+.chapter-name {
+	font-family: Gilroy, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.filter-head {
+	width: 270px;
+	float: right;
+	background-color: #dcdcdc;
+	padding-left: calc(100% + 8000px)
+}
+
+.sort-block {
+	width: 700px;
+	background-color: #eee;
+}
+
+.add-to-bucked {
+	display: none;
 }

@@ -50,27 +50,27 @@
       </ul>
     </nav>
   </header>
+</div>
 
-
-<main class=" main container"> 
+<main class="main"> 
 <!-- Заголовок страницы -->
-  <section class="content-head">
+  <div class="content-head container">
     <h1>Моноподы для селфи</h1>
-    <ul id="breadcrumbs-one">
+    <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
-      <li><a href="#"></a>Каталог товаров</li>
-      <li><a href="#"></a>Моноподы для селфи</li>
+      <li><a href="#">Каталог товаров</a></li>
+      <li><a href="#">Моноподы для селфи</a></li>
     </ul>
-  </section>
   </div>
 <!-- Форма для фильтра -->
+<div class="clearfix container">
   <div class="search-filter">
-    <span class="section-name filter">фильтр:</span>
+    <div class="chapter-name filter-head">фильтр:</div>
     <form action="#" method="post">
       <span class="section-name">Стоимость</span>
       <div class="range-block">
         <input type="range" min="0" max="10000" step="100" value="5000">
-       </div>  <!-- видел разную разметку, не уверен пока какую буду применять, так как и не совсем понимаю механизм ползунка. Дождусь темы об этом, тогда оформлю как надо. Пока что только сделаю видимость что здесь ползунок-->
+      </div>  
         
     <span class="section-name">Цвет</span>
     <div class="checkbox">
@@ -95,7 +95,7 @@
     </div>
 
     <span class="section-name">Bluetooth</span>
-    <<span class="section-name">Цвет</span>
+    <span class="section-name">Цвет</span>
     <div class="radio">
       <input type="radio" name="btth-btn" value="Yes" id="btth-yes" checked>
       <label for="btth-yes">Есть</label>
@@ -106,12 +106,12 @@
     </div>
       <input type="submit" name="show" value="Показать">
     </form>
-  </div>
+</div>
 <!-- Форма для отображения результатов фильтра и сортировки -->
 
   <div class="result-container">
     <div class="result-head">
-      <h2>сортировка:</h2>
+      <div class="chapter-name sort-block">сортировка:</div>
       <a href="">По цене</a>
       <a href="">По типу</a>
       <a href="">По популярности</a>
@@ -127,7 +127,7 @@
           <p>500 руб</p>
         </div>
       </div>
-    </div>
+    
   
     <div class="item-block">
       <div class="item-image">
@@ -155,7 +155,6 @@
       <div class="item-image">
         <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка <<Следуй за мной>>">
         <a href="#" class="add-to-bucked">в корзину</a>
-        <span class="label-New">New</span>
       </div>
       <div class="item-caption">
         <a href="#">Селфи-палка  &lt; &lt;Следуй за мной &gt; &gt;</a>
@@ -173,9 +172,12 @@
       </ul>
     </div>
   </div>
+</div> 
+</div> 
 </main>
 <!-- Футер -->
 <footer class="main-footer">
+<div class="container">
   <div class="footer-top clearfix">
     <div class="logo footer-logo logo-inactive">
       <a>device</a>
@@ -189,17 +191,16 @@
   <div class="footer-middle">
     <div class="addres">
       <a href="https://goo.gl/maps/1LFSRPVq5rL2" target="_blank">г. Москва, ул. Строителей, 15</a> 
-    </div>  
+    </div>    
     <ul class="footer-nav">
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Контакты</a></li>
-    </ul>   
+    </ul>    
     <div class="phone">
       <a href="tel:+74954959595">Тел: +7(495)495-95-95</a>
     </div>
-  </div>
-        
+  </div>  
   <div class="footer-bottom">
   <div class="social-block">
     <a class="social-bttn" href="#">
@@ -215,6 +216,7 @@
   <div class="html-academy">
     <a href="https://htmlacademy.ru" target="_blank"></a>
   </div>
+</div>
 </div>
 </footer>
 </body>
