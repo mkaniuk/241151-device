@@ -63,68 +63,93 @@
     </ul>
   </div>
 <!-- Форма для фильтра -->
-<div class="clearfix container">
-  <div class="search-filter">
-    <div class="chapter-name filter-head">фильтр:</div>
+<div class="catalog-wrap clearfix">
+<div class="column-filter">
+  <div class="filter-header">
+    <div class="filter-title">
+      <span class="chapter-name">фильтр:</span>
+    </div>
+  </div>
+  <div class="filter-form">
     <form action="#" method="post">
       <span class="section-name">Стоимость</span>
-      <div class="range-block">
-        <input type="range" min="0" max="10000" step="100" value="5000">
+      <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style=" width: 56%"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+        </div>
       </div>  
         
     <span class="section-name">Цвет</span>
-    <div class="checkbox">
-      <input type="checkbox" name="black" value="black" id="black">
+    <ul class="checkbox-row">
+    <li>
+      <input type="checkbox" class="checkbox" name="black" value="black" id="black" checked hidden>
       <label for="black">Черный</label><br>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" name="white" value="white" id="white">
+    </li>
+    <li>
+      <input type="checkbox" class="checkbox" name="white" value="white" id="white" hidden>
       <label for="white">Белый</label><br>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" name="blue" value="blue" id="blue">
+    </li>
+    <li>
+      <input type="checkbox" class="checkbox" name="blue" value="blue" id="blue" checked hidden>
       <label for="blue">Синий</label><br>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" name="red" value="red" id="red">
+    </li>
+    <li>
+      <input type="checkbox" class="checkbox" name="red" value="red" id="red" checked hidden>
       <label for="red">Красный</label><br>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" name="pink" value="pink" id="pink">
+    </li>
+    <li>
+      <input type="checkbox" class="checkbox" name="pink" value="pink" id="pink" hidden>
       <label for="pink">Розовый</label>
-    </div>
-
+    </li>
     <span class="section-name">Bluetooth</span>
-    <span class="section-name">Цвет</span>
-    <div class="radio">
-      <input type="radio" name="btth-btn" value="Yes" id="btth-yes" checked>
+    <li>
+      <input type="radio" class="radio" name="btth-btn" value="Yes" id="btth-yes" checked hidden>
       <label for="btth-yes">Есть</label>
-    </div>
-    <div class="radio">
-      <input type="radio" name="btth-btn" value="No" id="btth-no">
+    </li>
+    <li>
+      <input type="radio" class="radio" name="btth-btn" value="No" id="btth-no" hidden>
       <label for="btth-no">Нет</label>
-    </div>
-      <input type="submit" name="show" value="Показать">
+    </li>
+    </ul>
+      <input type="submit" class="submit" name="show" value="Показать">
     </form>
+  </div>  
 </div>
 <!-- Форма для отображения результатов фильтра и сортировки -->
 
-  <div class="result-container">
-    <div class="result-head">
-      <div class="chapter-name sort-block">сортировка:</div>
-      <a href="">По цене</a>
-      <a href="">По типу</a>
-      <a href="">По популярности</a>
-    </div>
-    <div class="result-contant">
+    <div class="catalog-header">
+      <div class="catalog-sort">
+      <span class="chapter-name">сортировка:</span>
+        <a href="#">По цене</a>
+        <a href="#">По типу</a>
+        <a href="#">По популярности</a>
+        <div class="sort-bttm-block">
+          <span href="#" class="sort-bttm sort-up"></span>
+          <span href="#" class="sort-bttm sort-down"></span>
+        </div>
+        
+      </div> 
+      </div>
+      <div class="catalog-content">
       <div class="item-block">
         <div class="item-image">
           <img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
+          <div class="item-internal-block">
           <a href="#" class="add-to-bucked">в корзину</a>
+          <a href="#" class="compare-item">Добавить к сравнению</a>
+        </div>
         </div>
         <div class="item-caption">
           <a href="#">Любительская селфи-палка</a>
-          <p>500 руб</p>
+          <span>500 руб</span>
         </div>
       </div>
     
@@ -132,55 +157,60 @@
     <div class="item-block">
       <div class="item-image">
         <img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
-        <a href="#" class="add-to-bucked">в корзину</a>
+        <div class="item-internal-block">
+          <a href="#" class="add-to-bucked">в корзину</a>
+          <a href="#" class="compare-item">Добавить к сравнению</a>
+        </div>
       </div>
       <div class="item-caption">
         <a href="#">Профессиональная селфи-палка</a>
-        <p>1 500 руб</p>
+        <span>1&nbsp;500&nbsp;руб</span>
       </div>
     </div>
     
     <div class="item-block">
       <div class="item-image">
         <img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-        <a href="#" class="add-to-bucked">в корзину</a>
+        <div class="item-internal-block">
+          <a href="#" class="add-to-bucked">в корзину</a>
+          <a href="#" class="compare-item">Добавить к сравнению</a>
+        </div>
       </div>
       <div class="item-caption">
         <a href="#">Непотопляемая селфи-палка</a>
-        <p>2 500 руб</p>
+        <span>2 500 руб</span>
       </div>
     </div>
     
     <div class="item-block">
       <div class="item-image">
         <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка <<Следуй за мной>>">
-        <a href="#" class="add-to-bucked">в корзину</a>
+        <div class="item-internal-block">
+          <a href="#" class="add-to-bucked">в корзину</a>
+          <a href="#" class="compare-item">Добавить к сравнению</a>
+        </div>
       </div>
       <div class="item-caption">
-        <a href="#">Селфи-палка  &lt; &lt;Следуй за мной &gt; &gt;</a>
-        <p>4 900 руб</p>
+        <a href="#">Селфи-палка  &laquo;Следуй за мной&raquo;</a>
+        <span>4 900 руб</span>
       </div>
-    </div>
-
-    <div class="pagination">
-      <ul>
-        <li><a class="btn content-prev" href="#">Назад</a></li>
+    </div> 
+   </div> 
+      <ul class="pagination clearfix">
+        <li class="btn content-prev"><a href="#">Назад</a></li>
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
-        <li><a class="btn content-next" href="#">Вперёд</a></li>
+        <li class="btn content-next" ><a href="#">Вперед</a></li>
       </ul>
-    </div>
-  </div>
-</div> 
-</div> 
+    </div> 
 </main>
 <!-- Футер -->
 <footer class="main-footer">
 <div class="container">
   <div class="footer-top clearfix">
     <div class="logo footer-logo logo-inactive">
-      <a>device</a>
+      <a href="index.html">device</a>
     </div>
     <div class="footer-user-block">
       <a class="footer-user-link enter-footer" href="#">Войти</a>
