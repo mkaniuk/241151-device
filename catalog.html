@@ -11,25 +11,24 @@
 <div class="container">
   <header class="header">
     <div class="logo logo-header logo-inactive">
-      <a href="index.html">device</a>
+      <a>device</a>
    </div>
    <div class="top-menu clearfix">
    <div class="search-form">
       <form action="#" name="search" method="get">
         <input type="text" name="search" value="Поиск по сайту" id="search">
-        <button type="submit" name="search-btn" id="search-bttn">Найти</button>
+        <input type="submit" name="search-btn" value="Найти" id="search-bttn">
       </form>
    </div>
-    <div class="header-user-block clearfix">
-        <a class="header-user-link enter" href="#">Валентин Петухов</a>
-        <a class="header-user-link exit" href="#">Выйти</a>
+    <div class="header-user-block">
+        <a class="header-user-link enter" href="#">Войти</a>
         <a class="header-user-link compare" href="#">Сравнить</a>
         <a class="header-user-link basket" href="#">Корзина</a>
     </div>
     </div>
     <nav class="header-nav">
       <ul class="menu clearfix">
-        <li class="menu-catalog"><a>Каталог товаров</a>
+        <li class="menu-catalog"><a href="#">Каталог товаров</a>
         <div class="sub-menu">
           <ul class="sub-menu-row">         
             <li><a href="#">Виртуальная реальность</a></li>
@@ -51,167 +50,202 @@
       </ul>
     </nav>
   </header>
-</div>
 
-<main class="main"> 
-<!-- Заголовок страницы -->
-  <div class="content-head container">
-    <h1>Моноподы для селфи</h1>
-    <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#">Каталог товаров</a></li>
-      <li><a href="#">Моноподы для селфи</a></li>
-    </ul>
-  </div>
-<!-- Форма для фильтра -->
-<div class="catalog-wrap clearfix">
-<div class="column-filter">
-  <div class="filter-header">
-    <div class="filter-title">
-      <span class="chapter-name">фильтр:</span>
-    </div>
-  </div>
-  <div class="filter-form">
-    <form action="#" method="post" id="sort-form">
-      <span class="section-name">Стоимость</span>
-      <div class="range-filter">
-        <div class="range-controls">
-          <div class="scale">
-            <div class="bar" style=" width: 56%"></div>
+
+<main class="main">
+  <div class="slider">
+  <div class="slide" id="slide1">
+    <div class="number-background">01</div>
+      <div class="slider-inner clearfix">
+        <div class="img-block">
+          <img class="slider-image" src="img/slider-1.png" width="384" height="486" alt="селфи палка/гиря">
+        </div>
+
+        <div class="slider-text">
+          <h2>Делай селфи, как&nbsp;Бен Стиллер!</h2>
+        <div class="device-description">
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл) метров длиной весом и всего 5 килограмм</p>
+        </div>
+          <a class="line-through" href="#">Подробнее</a>
+        <div class="device-table">
+          <div class="table-row">
+            <p class="up-cell">8,5 м</p>
+            <p class="down-cell">Длина палки</p>
           </div>
-          <div class="toggle toggle-min"></div>
-          <div class="toggle toggle-max"></div>
-        </div>
-        <div class="price-controls">
-          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
-        </div>
-      </div>  
-        
-    <span class="section-name">Цвет</span>
-    <ul class="checkbox-row">
-    <li>
-      <input type="checkbox" class="checkbox" name="black" value="black" id="black" checked hidden>
-      <label for="black">Черный</label><br>
-    </li>
-    <li>
-      <input type="checkbox" class="checkbox" name="white" value="white" id="white" hidden>
-      <label for="white">Белый</label><br>
-    </li>
-    <li>
-      <input type="checkbox" class="checkbox" name="blue" value="blue" id="blue" checked hidden>
-      <label for="blue">Синий</label><br>
-    </li>
-    <li>
-      <input type="checkbox" class="checkbox" name="red" value="red" id="red" checked hidden>
-      <label for="red">Красный</label><br>
-    </li>
-    <li>
-      <input type="checkbox" class="checkbox" name="pink" value="pink" id="pink" hidden>
-      <label for="pink">Розовый</label>
-    </li>
-    <span class="section-name ">Bluetooth</span>
-    <li class="radio-yes">
-      <input type="radio" class="radio" name="btth-btn" value="Yes" id="btth-yes" checked hidden>
-      <label for="btth-yes">Есть</label>
-    </li>
-    <li>
-      <input type="radio" class="radio" name="btth-btn" value="No" id="btth-no" hidden>
-      <label for="btth-no">Нет</label>
-    </li>
-    </ul>
-      <button type="submit" class="submit">Показать</button>
-    </form>
-  </div>  
+          <div class="table-row">
+            <p class="up-cell">5 кг</p>
+            <p class="down-cell">Вес палки</p>
+          </div>
+          <div class="table-row">
+            <p class="up-cell">Карбон</p>
+            <p class="down-cell">Материал</p>
+          </div>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- Форма для отображения результатов фильтра и сортировки -->
 
-    <div class="catalog-header">
-      <div class="catalog-sort">
-      <span class="chapter-name">сортировка:</span>
-        <a href="#">По цене</a>
-        <a href="#">По типу</a>
-        <a href="#">По популярности</a>
-        <div class="sort-bttm-block">
-          <span class="sort-bttm sort-up active"></span>
-          <span class="sort-bttm sort-down"></span>
-        </div>
-        
-      </div> 
+<div class="slide" id="slide2">
+  <div class="number-background">02</div>
+    <div class="slider-inner clearfix">
+      <div class="img-block">
+        <img class="slider-image" src="img/slider-2.png" width="345" height="485" alt="Модный фитнесс трекер">
       </div>
-      <div class="catalog-content">
-      <div class="item-block">
-        <div class="item-image">
-          <img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
-          <div class="item-internal-block">
-          <a href="#" class="add-to-bucked">в корзину</a>
-          <a href="#" class="compare-item">Добавить к сравнению</a>
-        </div>
-        </div>
-        <div class="item-caption">
-          <a href="#">Любительская селфи-палка</a>
-          <span>500 руб</span>
+
+      <div class="slider-text">
+        <h2>Худеем правильно!</h2>
+      <div class="device-description">
+        <p>Мотивирующие фитнесс браслеты помогут найти в себе силы не&nbsp;пропускать занятия и соблюдать диету</p>
+      </div>
+        <a class="line-through" href="#">Подробнее</a>
+      
+      <div class="device-table">
+        <div class="table-row">
+          <p class="up-cell">48 часов</p>
+          <p class="down-cell">Без подзарядки</p>
         </div>
       </div>
-    
+    </div>
+  </div>
+</div>
+
   
-    <div class="item-block">
-      <div class="item-image">
-        <img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
-        <div class="item-internal-block">
-          <a href="#" class="add-to-bucked">в корзину</a>
-          <a href="#" class="compare-item">Добавить к сравнению</a>
-        </div>
+
+<div class="slide" id="slide3">
+  <div class="number-background">03</div>
+    <div class="slider-inner clearfix">
+      <div class="img-block">
+        <img class="slider-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокопер с лазерной укаской для кота">
       </div>
-      <div class="item-caption">
-        <a href="#">Профессиональная селфи-&nbsp;палка</a>
-        <span>1&nbsp;500&nbsp;руб</span>
+
+      <div class="slider-text">
+        <h2 class="kvadrokopter">Пархает как бабочка, жалит как пчела</h2>
+      <div class="device-description">
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощьным лазером, замаскированным под стандартную камеру</p>
+      </div>
+        <a class="line-through" href="#">Подробнее</a>
+      <div class="device-table">
+        <div class="table-row">
+          <p class="up-cell">800м</p>
+          <p class="down-cell">Дальность полета</p>
+        </div>
+        <div class="table-row">
+          <p class="up-cell">50 м</p>
+          <p class="down-cell">Радиус поражения</p>
+        </div>
       </div>
     </div>
-    
-    <div class="item-block">
-      <div class="item-image">
-        <img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-        <div class="item-internal-block">
-          <a href="#" class="add-to-bucked">в корзину</a>
-          <a href="#" class="compare-item">Добавить к сравнению</a>
-        </div>
-      </div>
-      <div class="item-caption">
-        <a href="#">Непотопляемая селфи-палка</a>
-        <span>2 500 руб</span>
-      </div>
+  </div>
+</div>
+<div class="slider-controls">
+  <label for="bttn1"></label>
+  <label for="bttn2"></label>
+  <label for="bttn3"></label>
+</div>
+</div>
+<!-- Категории товаров на сайте -->
+    <ul class="category-list clearfix">
+      <li>
+        <div class="category-icon visual-reality"><a href="#"></a></div>
+        <a href="#" class="category-text">Визуальная реальность</a>
+      </li>
+      <li>
+        <div class="category-icon monopods"><a href="#"></a></div>
+        <a href="#" class="category-text">Моноподы для&nbsp;селфи</a>
+      </li>
+      <li>
+        <div class="category-icon cameras"><a href="#"></a></div>
+        <a href="#" class="category-text">Экшн-камеры</a>
+      </li>
+      <li>
+        <div class="category-icon bracelet"><a href="#"></a></div>
+        <a href="#" class="category-text">Фитнесс браслеты</a>
+      </li>
+      <li>
+        <div class="category-icon watches"><a href="#"></a></div>
+        <a href="#" class="category-text">Умные часы</a>
+      </li>
+      <li>
+        <div class="category-icon quadrocopters"><a href="#"></a></div>
+        <a href="#" class="category-text">Квадрокоптеры</a>
+      </li>
+    </ul>
+</div>
+<!--Блок сервисов  -->
+  <section class="service-background">
+  <div class="container">
+  <div class="service-slider">
+    <div class="service-bttms">
+      <span class="service-line-through shipping shipping-active">Доставка</span>
+      <span class="service-line-through warranty">Гарантия</span>
+      <span class="service-line-through credit">Кредит</span>
     </div>
-    
-    <div class="item-block">
-      <div class="item-image">
-        <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка <<Следуй за мной>>">
-        <div class="item-internal-block">
-          <a href="#" class="add-to-bucked">в корзину</a>
-          <a href="#" class="compare-item">Добавить к сравнению</a>
-        </div>
-      </div>
-      <div class="item-caption">
-        <a href="#">Селфи-палка  &laquo;Следуй за мной&raquo;</a>
-        <span>4 900 руб</span>
-      </div>
-    </div> 
-   </div> 
-      <ul class="pagination clearfix">
-        <li class="content-prev"><a href="#">Назад</a></li>
-        <li class="pagination-number number-active"><a href="#">1</a></li>
-        <li class="pagination-number"><a href="#">2</a></li>
-        <li class="pagination-number"><a href="#">3</a></li>
-        <li class="content-next" ><a href="#">Вперед</a></li>
+    <div class="service-slide delivery-slide">
+      <h2>Доставка</h2>
+      <p>Мы с удовольствием доставим ваш товар прямо к вашему подьезду совершенно бесплатно! Ведь мы неплохо заработаем поднимая его на ваш этаж</p>
+    </div>
+
+    <div class="service-slide warranty-slide">
+      <h2>Гарантия</h2>
+      <p>Если из за восгарания купленного у нас товара у вас сгорит дом - не пережывайте, мы выдадим вам новый. Товар,&nbsp;а&nbsp;не&nbsp;дом, конечно же</p>
+    </div>
+
+    <div class="service-slide credit-slide">
+      <h2>Кредит</h2>
+      <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас найболее выгодные условия&nbsp;кредита. Выгодные для нашего банка разумеется</p>
+    </div>
+    </div>
+  </div>  
+  </section>
+
+<!-- Блок партнёров -->
+<div class="container">
+  <div class="partner">
+      <a class="partner-link" href="#">
+        <img class="img-active" src="img/logo-1.jpg" width="260" height="100" alt="dji">
+        <img class="img-opacity" src="img/logo-1.1.png" width="260" height="100" alt="dji">
+      </a>
+      <a class="partner-link" href="#">
+        <img class="img-active" src="img/logo-3-1.jpg" width="260" height="100" alt="SPGadgets">
+        <img class="img-opacity" src="img/logo-3-1.1.png" width="260" height="100" alt="SPGadgets">
+      </a>
+      <a class="partner-link" href="#">
+        <img class="img-active" src="img/logo-3.jpg" width="260" height="100" alt="GoPro">
+        <img class="img-opacity" src="img/logo-3.1.png" width="260" height="100" alt="GoPro">
+      </a>
+      <a class="partner-link" href="#">
+        <img class="img-active" src="img/logo-4.jpg" width="260" height="100" alt="VIVE">
+        <img class="img-opacity" src="img/logo-4.1.png" width="260" height="100" alt="VIVE">
+      </a>
+  </div>
+<!-- Блок "Информацыя о компании" -->
+  <div class="company-info clearfix">
+    <section class="about-us">
+      <h2>О нас</h2>
+      <p>Огромный выбог гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
+      <ul class="delivery-list">
+        <li>Деловые Линии</li>
+        <li>Автотрейдинг</li>
+        <li>ЖелДорЭкспедиция</li>
       </ul>
-    </div> 
+      <a class="about-us-bttm-line" href="#">Подробнее о нас</a>
+    </section>
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно вы можете проверить работоспособность покупки, всякое бывает</p>
+      <img src="img/map.jpg" width="560" height="222" alt="карта"><br>
+      <a class="contacts-bttm-line" href="#">Напишите нам</a>
+    </section>
+  </div>
+  </div>  
 </main>
 <!-- Футер -->
 <footer class="main-footer">
 <div class="container">
   <div class="footer-top clearfix">
     <div class="logo footer-logo logo-inactive">
-      <a href="index.html">device</a>
+      <a>device</a>
     </div>
     <div class="footer-user-block">
       <a class="footer-user-link enter-footer" href="#">Войти</a>
@@ -226,10 +260,10 @@
     <ul class="footer-nav">
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Гарантия</a></li>
-      <li><a href="#">Контакты</a></li>
+      <li class="footer-contacts"><a href="#">Контакты</a></li>
     </ul>    
     <div class="phone">
-      <a href="tel:+74954959595">Тел: +7(495)495-95-95</a>
+      <a href="tel:+74954959595">Тел: +7 (495) 495-95-95</a>
     </div>
   </div>  
   <div class="footer-bottom">
@@ -252,3 +286,4 @@
 </footer>
 </body>
 </html>
+
