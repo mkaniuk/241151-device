@@ -1336,7 +1336,7 @@ opacity: 0.4;
 	height: 1215px;
 }
 
-.filter-form form {
+.filter-form #sort-form {
 	position: relative;
 	padding-top: 32px;
 }
