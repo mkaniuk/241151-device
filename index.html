@@ -28,11 +28,11 @@
     </div>
     <nav class="header-nav">
       <ul class="menu clearfix">
-        <li class="menu-catalog"><a href="catalog.html">Каталог товаров</a>
+        <li class="menu-catalog"><a href="#">Каталог товаров</a>
         <div class="sub-menu">
           <ul class="sub-menu-row">         
             <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
 					</ul>
           <ul class="sub-menu-row">
@@ -44,8 +44,8 @@
           </ul>
         </div>
         </li> 
-        <li class="nav-bttm"><a href="#">Доставка</a></li>
-        <li class="nav-bttm"><a href="#">Гарантия</a></li>
+        <li class="menu-delivery"><a href="#">Доставка</a></li>
+        <li class="menu-warranty"><a href="#">Гарантия</a></li>
         <li class="menu-contacts"><a href="#">Контакты</a></li>
       </ul>
     </nav>
@@ -176,7 +176,7 @@
 	<div class="container">
 	<div class="service-slider">
 		<div class="service-bttms">
-			<span class="service-line-through shipping">Доставка</span>
+			<span class="service-line-through shipping shipping-active">Доставка</span>
 			<span class="service-line-through warranty">Гарантия</span>
 			<span class="service-line-through credit">Кредит</span>
 		</div>
@@ -201,18 +201,22 @@
 <!-- Блок партнёров -->
 <div class="container">
 	<div class="partner">
-		<div class="partner-block">
-			<a href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="dji"></a>
-		</div>
-		<div class="partner-block">
-			<a href="#"><img src="img/logo-3-1.jpg" width="260" height="100" alt="SPGadgets"></a>
-		</div>
-		<div class="partner-block">
-			<a href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="GoPro"></a>
-		</div>
-		<div class="partner-block">
-		<a href="#"><img src="img/logo-4.jpg" width="260" height="100" alt="VIVE"></a>
-		</div>
+			<a class="partner-link" href="#">
+				<img class="img-active" src="img/logo-1.jpg" width="260" height="100" alt="dji">
+				<img class="img-opacity" src="img/logo-1.1.png" width="260" height="100" alt="dji">
+			</a>
+			<a class="partner-link" href="#">
+				<img class="img-active" src="img/logo-3-1.jpg" width="260" height="100" alt="SPGadgets">
+				<img class="img-opacity" src="img/logo-3-1.1.png" width="260" height="100" alt="SPGadgets">
+			</a>
+			<a class="partner-link" href="#">
+				<img class="img-active" src="img/logo-3.jpg" width="260" height="100" alt="GoPro">
+				<img class="img-opacity" src="img/logo-3.1.png" width="260" height="100" alt="GoPro">
+			</a>
+			<a class="partner-link" href="#">
+				<img class="img-active" src="img/logo-4.jpg" width="260" height="100" alt="VIVE">
+				<img class="img-opacity" src="img/logo-4.1.png" width="260" height="100" alt="VIVE">
+			</a>
 	</div>
 <!-- Блок "Информацыя о компании" -->
 	<div class="company-info clearfix">
@@ -256,22 +260,22 @@
     <ul class="footer-nav">
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Гарантия</a></li>
-      <li><a href="#">Контакты</a></li>
+      <li class="footer-contacts"><a href="#">Контакты</a></li>
     </ul>    
     <div class="phone">
-      <a href="tel:+74954959595">Тел: +7(495)495-95-95</a>
+      <a href="tel:+74954959595">Тел: +7 (495) 495-95-95</a>
     </div>
   </div>  
   <div class="footer-bottom">
   <div class="social-block">
     <a class="social-bttn" href="#">
-      <img src="img/facebook.png" alt="Фейсбук">
+    	<img src="img/facebook.png" alt="Фейсбук">
     </a>
     <a class="social-bttn" href="#">
-      <img src="img/insta.png" alt="Инстаграм">
+    	<img src="img/insta.png" alt="Инстаграм">
     </a>
     <a class="social-bttn" href="#">
-      <img src="img/twitter.png" alt="Твиттер">
+    	<img src="img/twitter.png" alt="Твиттер">
     </a>
   </div>  
   <div class="html-academy">
@@ -282,3 +286,4 @@
 </footer>
 </body>
 </html>
+

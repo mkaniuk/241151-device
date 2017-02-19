@@ -17,11 +17,12 @@
    <div class="search-form">
       <form action="#" name="search" method="get">
         <input type="text" name="search" value="Поиск по сайту" id="search">
-        <input type="submit" name="search-btn" value="Найти" id="search-bttn">
+        <button type="submit" name="search-btn" id="search-bttn">Найти</button>
       </form>
    </div>
-    <div class="header-user-block">
-        <a class="header-user-link enter" href="#">Войти</a>
+    <div class="header-user-block clearfix">
+        <a class="header-user-link enter" href="#">Валентин Петухов</a>
+        <a class="header-user-link exit" href="#">Выйти</a>
         <a class="header-user-link compare" href="#">Сравнить</a>
         <a class="header-user-link basket" href="#">Корзина</a>
     </div>
@@ -32,7 +33,7 @@
         <div class="sub-menu">
           <ul class="sub-menu-row">         
             <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
           </ul>
           <ul class="sub-menu-row">
@@ -44,8 +45,8 @@
           </ul>
         </div>
         </li> 
-        <li class="nav-bttm"><a href="#">Доставка</a></li>
-        <li class="nav-bttm"><a href="#">Гарантия</a></li>
+        <li class="menu-delivery"><a href="#">Доставка</a></li>
+        <li class="menu-warranty"><a href="#">Гарантия</a></li>
         <li class="menu-contacts"><a href="#">Контакты</a></li>
       </ul>
     </nav>
@@ -71,7 +72,7 @@
     </div>
   </div>
   <div class="filter-form">
-    <form action="#" method="post">
+    <form action="#" method="post" id="sort-form">
       <span class="section-name">Стоимость</span>
       <div class="range-filter">
         <div class="range-controls">
@@ -109,8 +110,8 @@
       <input type="checkbox" class="checkbox" name="pink" value="pink" id="pink" hidden>
       <label for="pink">Розовый</label>
     </li>
-    <span class="section-name">Bluetooth</span>
-    <li>
+    <span class="section-name ">Bluetooth</span>
+    <li class="radio-yes">
       <input type="radio" class="radio" name="btth-btn" value="Yes" id="btth-yes" checked hidden>
       <label for="btth-yes">Есть</label>
     </li>
@@ -119,7 +120,7 @@
       <label for="btth-no">Нет</label>
     </li>
     </ul>
-      <input type="submit" class="submit" name="show" value="Показать">
+      <button type="submit" class="submit">Показать</button>
     </form>
   </div>  
 </div>
@@ -132,7 +133,7 @@
         <a href="#">По типу</a>
         <a href="#">По популярности</a>
         <div class="sort-bttm-block">
-          <span href="#" class="sort-bttm sort-up"></span>
+          <span href="#" class="sort-bttm sort-up active"></span>
           <span href="#" class="sort-bttm sort-down"></span>
         </div>
         
@@ -163,7 +164,7 @@
         </div>
       </div>
       <div class="item-caption">
-        <a href="#">Профессиональная селфи-палка</a>
+        <a href="#">Профессиональная селфи-&nbsp;палка</a>
         <span>1&nbsp;500&nbsp;руб</span>
       </div>
     </div>
@@ -197,11 +198,11 @@
     </div> 
    </div> 
       <ul class="pagination clearfix">
-        <li class="btn content-prev"><a href="#">Назад</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li class="btn content-next" ><a href="#">Вперед</a></li>
+        <li class="content-prev"><a href="#">Назад</a></li>
+        <li class="pagination-number number-active"><a href="#">1</a></li>
+        <li class="pagination-number"><a href="#">2</a></li>
+        <li class="pagination-number"><a href="#">3</a></li>
+        <li class="content-next" ><a href="#">Вперед</a></li>
       </ul>
     </div> 
 </main>
